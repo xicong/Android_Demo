@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="Zdy_view_jibuqi">
+        <attr name="jbq_outer_color" format="color"/>
+        <attr name="jbq_inner_color" format="color"/>
+        <attr name="jbq_boder_width" format="dimension"/>
+        <attr name="jbq_text" format="float"/>
+        <attr name="jbq_text_color" format="color"/>
+        <attr name="jbq_text_size"   format="dimension"/>
+    </declare-styleable>
+    
+    <declare-styleable name="Zdy_view_text">
+        <attr name="my_text" format="string"/>
+        <attr name="my_text_color" format="color"/>
+        <attr name="my_text_size" format="dimension"/>
+    </declare-styleable>
+    
+</resources>
