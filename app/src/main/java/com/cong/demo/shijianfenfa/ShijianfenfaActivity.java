@@ -10,21 +10,34 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.cong.demo.R;
 
 public class ShijianfenfaActivity extends AppCompatActivity {
+    
+    private String Tag = getClass().getName();
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dispatch_layout);
+        setContentView(R.layout.shijianfenfa_layout);
     }
 
+    /**
+     * 传递事件
+     * @param event
+     * @return
+     */
     @Override
-    public boolean dispatchTouchEvent(MotionEvent ev) {
-        Log.e("ttit", "DispatchActivity ://////dispatchTouchEvent");
-        return super.dispatchTouchEvent(ev);
+    public boolean dispatchTouchEvent(MotionEvent event) {
+        Log.e(Tag, "分发事件=====================dispatchTouchEvent");
+        return super.dispatchTouchEvent(event);
     }
 
+    /**
+     * 处理事件
+     * @param event
+     * @return
+     */
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        Log.e("ttit", "DispatchActivity ://////onTouchEvent event ="+event.getAction());
+        Log.e(Tag, "onTouchEvent event============="+event.getAction());
         return true;
     }
 }
