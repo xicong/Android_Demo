@@ -19,7 +19,7 @@
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
-        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/src/main/res_zidingyiview;file://$MODULE_DIR$/src/main/res_shijianfenfa;file://$MODULE_DIR$/src/main/res_lliaojieactivitydeqidongguocheng" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/src/main/res_zidingyiview;file://$MODULE_DIR$/src/main/res_shijianfenfa;file://$MODULE_DIR$/src/main/res_lliaojieactivitydeqidongguocheng;file://$MODULE_DIR$/src/main/res_activity;file://$MODULE_DIR$/src/main/res_fragment;file://$MODULE_DIR$/src/main/res_rx;file://$MODULE_DIR$/src/main/res_xiecheng" />
         <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
@@ -105,6 +105,10 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/res_zidingyiview" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/res_shijianfenfa" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/res_lliaojieactivitydeqidongguocheng" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/res_activity" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/res_fragment" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/res_rx" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/res_xiecheng" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/assets" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/aidl" isTestSource="false" />

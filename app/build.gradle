@@ -31,6 +31,10 @@ android {
                             'src/main/res_zidingyiview',
                             'src/main/res_shijianfenfa',
                             'src/main/res_lliaojieactivitydeqidongguocheng',
+                            'src/main/res_activity',
+                            'src/main/res_fragment',
+                            'src/main/res_rx',
+                            'src/main/res_xiecheng',
                     ]
         }
     }
