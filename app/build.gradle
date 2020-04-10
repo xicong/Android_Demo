@@ -34,7 +34,7 @@ android {
                             'src/main/res_activity',
                             'src/main/res_fragment',
                             'src/main/res_rx',
-                            'src/main/res_xiecheng',
+                            'src/main/res_xiancheng',
                     ]
         }
     }
@@ -46,6 +46,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    
+    //kotlin的标准库
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.core:core-ktx:1.2.0'
@@ -55,5 +57,10 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.blankj:utilcodex:1.26.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    
+    //adapter的一个封装库
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.2'
+    
+    //协程的基础库
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0'
 }

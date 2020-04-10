@@ -1,29 +1,29 @@
-package com.cong.demo.zidingyiview
+package com.cong.demo.fragment
 
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.blankj.utilcode.util.ActivityUtils
 import com.cong.demo.BaseActivity
-import com.cong.demo.RvAdapter
 import com.cong.demo.R
+import com.cong.demo.RvAdapter
 import kotlinx.android.synthetic.main.layout_main.*
 
-class ZdyViewActivity : BaseActivity(){
+class Fragment_Xg : BaseActivity(){
 
     var mList = arrayListOf<String>()
-    
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_main)
 
         initData()
         initRecycleView()
+
     }
 
     fun initData(){
         mList.clear()
-        mList.add("自定义Text")
-        mList.add("自定义记步圈")
+        mList.add("Fragment的生命周期")
     }
 
     fun initRecycleView(){
@@ -34,13 +34,9 @@ class ZdyViewActivity : BaseActivity(){
         adapter.setOnItemClickListener { adapter, view, position ->
             when (position){
                 0 -> {
-                    ActivityUtils.startActivity(Zdy_view_textview_Activity::class.java)
-                }
-                1 -> {
-                    ActivityUtils.startActivity(Zdy_view_jibuqi_Activity::class.java)
+                    ActivityUtils.startActivity(Fragment_ShengMingZhouQi::class.java)
                 }
             }
         }
     }
-    
 }

@@ -12,7 +12,6 @@
         <activity android:name=".Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -20,6 +19,12 @@
         <activity android:name=".zidingyiview.Zdy_view_jibuqi_Activity"/>
         <activity android:name=".zidingyiview.Zdy_view_textview_Activity"/>
         <activity android:name=".zidingyiview.ZdyViewActivity"/>
+        <activity android:name=".fragment.Fragment_ShengMingZhouQi"/>
+        <activity android:name=".activity.Activity_ShengMingZhouQi"/>
+        <activity android:name=".activity.Activity_Xg"/>
+        <activity android:name=".fragment.Fragment_Xg"/>
+        <activity android:name=".xiancheng.Activity_Kotlin_XieCheng"/>
+        <activity android:name=".xiancheng.Activity_Thread_Java"/>
     </application>
 
 </manifest>

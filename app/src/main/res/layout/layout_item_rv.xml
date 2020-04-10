@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Main   ZdyViewActivity同用item-->
+<!--公用的-->
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:background="#cccccc"
+    android:layout_margin="5dp"
     android:layout_height="40dp">
 
     <TextView
@@ -11,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:text="item"
+        android:layout_margin="5dp"
         android:textColor="#000000"
         android:textSize="15sp"
         android:textStyle="bold"/>
