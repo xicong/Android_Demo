@@ -25,6 +25,7 @@
         <activity android:name=".fragment.Fragment_Xg"/>
         <activity android:name=".xiancheng.Activity_Kotlin_XieCheng"/>
         <activity android:name=".xiancheng.Activity_Thread_Java"/>
+        <activity android:name=".mergeadapter.MergeAdapterDemo"/>
     </application>
 
 </manifest>

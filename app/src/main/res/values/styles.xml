@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="@style/Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
 
         <!--Appbar背景色-->
@@ -16,6 +16,42 @@
         <!--window窗口没有title-->
         <item name="android:windowNoTitle">true</item>
         <item name="windowNoTitle">true</item>
+        
+        <!--设置背景颜色-->
+        <item name="android:background">#ffffff</item>
+        <item name="android:windowBackground">#ffffff</item>
+        
+        <!--窗口的动画样式-->
+        <item name="android:windowAnimationStyle">@null</item>
+
+        <!--窗口的背景色是否会遮盖页面-->
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!--windowTranslucentStatus是Android4.4（API为19）开始提供的样式设置
+        如果要想在4.4手机上做沉浸式状态栏那么直能设置true。在Android5.0以后的版本可以不用设置
+        -->
+        <item name="android:windowTranslucentStatus">false</item>
+        
+        <!--当该属性设置 true 时，会在屏幕最上方预留出状态栏高度的 padding。  
+        这里设置为true后下面两个函数都会失效
+        BarUtils.addMarginTopEqualStatusBarHeight(view)    
+        BarUtils.subtractMarginTopEqualStatusBarHeight(view)-->
+        <item name="android:fitsSystemWindows">true</item>
+
+        <!--从 style 中的属性我们猜测，我们需要将 <item name="android:windowTranslucentNavigation">false</item> 
+        属性设置为 false ，是 Navigation Bar 不透明，但效果却并没有变成我们想象的那样，Status Bar 的样式完全失效。
+        事实上，android:windowTranslucentNavigation 这个属性额外设置了 SYSTEM_UI_FLAG_LAYOUT_STABLE 
+        和 SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN 两个 flag。所以我们需要再绘制完 Status Bar 以后重新请求这两个 flag 。
+        -->
+        <item name="android:windowTranslucentNavigation">true</item>
+
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        
+    </style>
+    
+    <style name="splashPageThem"  parent="AppTheme">
+        
         
     </style>
 

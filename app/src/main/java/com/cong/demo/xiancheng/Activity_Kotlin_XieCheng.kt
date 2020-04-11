@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.provider.Settings
 import android.util.Log
 import com.blankj.utilcode.util.LogUtils
+import com.blankj.utilcode.util.TimeUtils
 import com.cong.demo.BaseActivity
 import com.cong.demo.R
 import kotlinx.android.synthetic.main.layout_activity_xiecheng_kotlin.*
@@ -13,7 +14,15 @@ import kotlinx.coroutines.*
  * java中的线程
  * 
  * 
- * kotlin中的协程  一个线程框架  方便在可以在同一个代码块进行多次的线程切换
+ * 如果出现三个任务甚至更多新任务需要执行的情况并且，任务2依赖任务1的结果，任务3依赖任务2的结果依次串联
+ * 常规的实现方法
+ *      1，回调  依次嵌套回调
+ *      2，Future  java8新引入的CompletableFuture
+ *      3，Rx编程
+ *      4，协程
+ * 
+ * 
+ * kotlin中的协程  一个线程框架  很轻量的 方便在可以在同一个代码块进行多次的线程切换
  * 
  * 
  * 协程的创建方式
@@ -56,9 +65,10 @@ class Activity_Kotlin_XieCheng : BaseActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_activity_xiecheng_kotlin)
 
-//        xiechengrunBlocking()
+        xiechengrunBlocking()
 //        xiechenglaunch()
-        xiechengCoroutineScope()
+//        xiechengCoroutineScope()
+//        xiechengguaqihanshu()
 
         tv_activity_xiecheng_kotlin_kaishixiancheng.setOnClickListener { 
 //            xiancheng()
@@ -66,10 +76,54 @@ class Activity_Kotlin_XieCheng : BaseActivity(){
     }
 
     /**
+     * 学习一下协程的挂起函数
+     * 
+     * 挂起函数只能在协程中或者其他挂起函数中调用
+     * 
+     * 挂起函数挂起协程时，不会阻塞协程所在的线程，挂起函数执行完成后会恢复协程，后面的代码才会继续执行，
+     */
+    fun xiechengguaqihanshu(){
+        LogUtils.i("=============协程之前==============")
+        GlobalScope.launch { 
+//           val num = async {   //可以设置返回值 
+//                getString()
+//            }
+//           LogUtils.i(num.await())
+            LogUtils.i("=============挂起函数之前==============")
+            guaqihanshu()
+            LogUtils.i("=============挂起函数之后==============")
+        }
+        LogUtils.i("=============协程之后==============")
+    }
+    
+    suspend  fun guaqihanshu(){
+        LogUtils.i("=============guaqihanshu=======${TimeUtils.getNowMills()}=========${TimeUtils.getNowString()}")
+    }
+    
+    fun  getString(): Int{
+        return 11;
+    }
+    
+
+    /**
      * 因为协程本身轻量级，但是做的事情都比较重，比如读写文件或者网络请求使用代码手动跟踪大量的协程是相当困难的，这样的代码容易出错，一旦对协程失去追踪，那么就会导致泄露，这比内存泄露更严重，因为失去追踪的协程在resume的时候可能会消耗内存，cpu，磁盘，甚至会进行不再必要的网络请求
      * 所以CoroutineScope就出来了，通过launch，async启动一个协程需要指定CoroutineScope，取消只需要CoroutineScope.cancel,kotlin会帮我们自动取消在这个作用域内启动的协程
      * 
-     * 
+     * CoroutineScope  可以理解为协程本身  包含了CoroutineContext
+     * CoroutineContext   协程的上下文  是一些元素的集合  主要包含Job CoroutineDispater  可以代表一些协程的场景
+     * CoroutineDispater
+     * Job&Deferred    
+     *          Job  封装了协程中需要执行的代码，  可以取消并且有简单的生命周期
+     *          Job完成时是没有返回值的，如果需要返回值的话，使用Deferred  是Job的子类
+     *                  State                                                             [isActive]         [isCompleted]         [isCancelled]  
+     *                  New(optional initial state)                           false                false                         false
+     *                  Active (default initial state)                        true                  false                         false
+     *                  Completing (optional transient state)         true                 false                         false
+     *                  Cancelling (optional transient state)          false                false                         true
+     *                  Cancelled (final state)                                 false                true                          true
+     *                  Completed (final state)                                false                true                          false
+     *
+     *EmptyCoroutineScope  表示一个空的协程上下文
      */
     fun xiechengCoroutineScope(){
         val viewModleJob = Job()    //用来取消协程
@@ -101,13 +155,36 @@ class Activity_Kotlin_XieCheng : BaseActivity(){
 
     /**
      * 一个可以阻塞线程的例子
+     * runBlocking后面的代码必须在runBlocking执行完之后才会执行
      */
     fun xiechengrunBlocking(){
-        LogUtils.i("=============00================")
+        LogUtils.i("=============runBlocking代码开始之前================")
         runBlocking {
-            LogUtils.i("=============11================")
+            LogUtils.i("=============runBlocking1=======${TimeUtils.getNowMills()}=========${TimeUtils.getNowString()}")
+            //launch会放在log后执行
+            //并且两个launch是先后执行
+//            launch {
+//                LogUtils.i("=============launch1======${TimeUtils.getNowMills()}==========${TimeUtils.getNowString()}")
+//            }
+//            launch {
+//                LogUtils.i("=============launch2=======${TimeUtils.getNowMills()}=========${TimeUtils.getNowString()}")
+//            }
+            
+            //用asynac后默认会直接执行，可以设置调用await()后在执行  val one = async(start = CoroutineStart.LAZY) { doSomethingUsefulOne() }
+            //async会放在log后执行
+            //并且两个launch是先后执行
+            async {
+                delay(6000)
+                LogUtils.i("=============async1=======${TimeUtils.getNowMills()}=========${TimeUtils.getNowString()}")
+            }
+            async {
+                delay(6000)
+                LogUtils.i("=============async2=======${TimeUtils.getNowMills()}=========${TimeUtils.getNowString()}")
+            }
+            
+            LogUtils.i("=============runBlocking2======${TimeUtils.getNowMills()}==========${TimeUtils.getNowString()}")
         }
-        LogUtils.i("=============22================")
+        LogUtils.i("=============runBlocking代码结束之后=====${TimeUtils.getNowMills()}===========")
     }
     
     /**
@@ -129,8 +206,7 @@ class Activity_Kotlin_XieCheng : BaseActivity(){
         LogUtils.i("=======协程代码之后===========")
 //        xc.cancel()  //线程退出
     }
-
-
+    
 //    tv_activity_xiecheng_kotlin_num.text = "${i}"
     
 }

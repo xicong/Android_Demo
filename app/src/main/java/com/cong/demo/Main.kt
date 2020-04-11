@@ -4,6 +4,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.blankj.utilcode.util.ActivityUtils
 import com.cong.demo.activity.Activity_Xg
 import com.cong.demo.fragment.Fragment_Xg
+import com.cong.demo.mergeadapter.MergeAdapterDemo
 import com.cong.demo.shijianfenfa.ShijianfenfaActivity
 import com.cong.demo.xiancheng.Activity_Kotlin_XieCheng
 import com.cong.demo.zidingyiview.ZdyViewActivity
@@ -37,7 +38,10 @@ class Main : BaseActivity(){
         
         //线程相关
 //        ActivityUtils.startActivity(Activity_Thread_Java::class.java)
-        ActivityUtils.startActivity(Activity_Kotlin_XieCheng::class.java)
+//        ActivityUtils.startActivity(Activity_Kotlin_XieCheng::class.java)
+        
+        //MergeAdapter
+        ActivityUtils.startActivity(MergeAdapterDemo::class.java)
     
     }
     
