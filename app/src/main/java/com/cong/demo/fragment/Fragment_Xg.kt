@@ -3,7 +3,7 @@ package com.cong.demo.fragment
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.blankj.utilcode.util.ActivityUtils
-import com.cong.demo.BaseActivity
+import com.cong.demo.base.BaseActivity
 import com.cong.demo.R
 import com.cong.demo.RvAdapter
 import kotlinx.android.synthetic.main.layout_main.*

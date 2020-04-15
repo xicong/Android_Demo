@@ -3,11 +3,16 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.blankj.utilcode.util.ActivityUtils
 import com.cong.demo.activity.Activity_Xg
+import com.cong.demo.base.BaseActivity
 import com.cong.demo.fragment.Fragment_Xg
-import com.cong.demo.mergeadapter.MergeAdapterDemo
+import com.cong.demo.jetpack.LifeCycleViewModelLIveDataDataBindingDemo
+import com.cong.demo.jetpack.databinding.DataBindingActivity
+import com.cong.demo.jetpack.lifecycle.LifecycleActivity
+import com.cong.demo.jetpack.livedata.LIveDataActivity
+import com.cong.demo.jetpack.navigation.NavigationDemo
+import com.cong.demo.jetpack.room.RoomActivity
+import com.cong.demo.jetpack.viewmodel.ViewModelActivity
 import com.cong.demo.shijianfenfa.ShijianfenfaActivity
-import com.cong.demo.xiancheng.Activity_Kotlin_XieCheng
-import com.cong.demo.zidingyiview.ZdyViewActivity
 import kotlinx.android.synthetic.main.layout_main.*
 
 class Main : BaseActivity(){
@@ -28,6 +33,7 @@ class Main : BaseActivity(){
 //        ActivityUtils.startActivity(ZdyViewActivity::class.java)
 //        ActivityUtils.startActivity(Zdy_view_textview_Activity::class.java)
 //        ActivityUtils.startActivity(Zdy_view_jibuqi_Activity::class.java)
+//        ActivityUtils.startActivity(Zdy_View_Zhexiantu_Activity::class.java)
 
         
         //Acticity的生命周期
@@ -41,8 +47,16 @@ class Main : BaseActivity(){
 //        ActivityUtils.startActivity(Activity_Kotlin_XieCheng::class.java)
         
         //MergeAdapter
-        ActivityUtils.startActivity(MergeAdapterDemo::class.java)
+//        ActivityUtils.startActivity(MergeAdapterDemo::class.java)
     
+        //jetpack
+//        ActivityUtils.startActivity(LifecycleActivity::class.java)
+//        ActivityUtils.startActivity(ViewModelActivity::class.java)
+//        ActivityUtils.startActivity(LIveDataActivity::class.java)
+//        ActivityUtils.startActivity(DataBindingActivity::class.java)
+//        ActivityUtils.startActivity(LifeCycleViewModelLIveDataDataBindingDemo::class.java)
+//        ActivityUtils.startActivity(NavigationDemo::class.java)
+        ActivityUtils.startActivity(RoomActivity::class.java)
     }
     
     fun initData(){
@@ -62,9 +76,6 @@ class Main : BaseActivity(){
             when (position){
                 0 -> {
                     ActivityUtils.startActivity(ShijianfenfaActivity::class.java)
-                }
-                1 -> {
-                    ActivityUtils.startActivity(ZdyViewActivity::class.java)
                 }
                 2 -> {
                     ActivityUtils.startActivity(Activity_Xg::class.java)

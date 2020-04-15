@@ -1,11 +1,9 @@
-package com.cong.demo
+package com.cong.demo.base
 
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
-import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.get
 import com.blankj.utilcode.util.BarUtils
 
 open class BaseActivity : AppCompatActivity(){

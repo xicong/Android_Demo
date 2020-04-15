@@ -100,7 +100,11 @@ class Zdy_view_jibuqi : View{
         //绘制内圆弧
         val center=width/2
         val radius=(width-mBorderWidth)/2
-        val rectF=RectF((mBorderWidth/2).toFloat(), (mBorderWidth/2).toFloat(), (center+radius).toFloat(), (center+radius).toFloat())
+        val rectF=RectF(
+            (mBorderWidth/2).toFloat(),
+            (mBorderWidth/2).toFloat(), 
+            (center+radius).toFloat(), 
+            (center+radius).toFloat())
         mOutPaint?.let { canvas!!.drawArc(rectF, 135F, 270F,false, it) }
    
         //绘制外圆弧

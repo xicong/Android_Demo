@@ -2,7 +2,7 @@ package com.cong.demo.xiancheng;
 
 import android.os.Bundle;
 
-import com.cong.demo.BaseActivity;
+import com.cong.demo.base.BaseActivity;
 import com.cong.demo.R;
 
 import org.jetbrains.annotations.Nullable;

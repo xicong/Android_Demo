@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="user_viewmodel"
+            type="com.cong.demo.jetpack.UserViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            bind:url="@{user_viewmodel.liveDateUser.headimg}"
+            />
+        
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+            android:text="@{String.valueOf(user_viewmodel.liveDateUser.age)}"
+        android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@{user_viewmodel.liveDateUser.name}"
+            android:textColor="#000000"/>
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新数据"
+            android:onClick="@{()-> user_viewmodel.agePlus()}"
+            />
+        
+        
+    </LinearLayout>
+</layout>

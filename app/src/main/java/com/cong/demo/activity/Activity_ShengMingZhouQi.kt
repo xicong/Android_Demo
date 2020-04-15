@@ -2,7 +2,7 @@ package com.cong.demo.activity
 
 import android.os.Bundle
 import com.blankj.utilcode.util.LogUtils
-import com.cong.demo.BaseActivity
+import com.cong.demo.base.BaseActivity
 import com.cong.demo.R
 
 class Activity_ShengMingZhouQi  : BaseActivity(){

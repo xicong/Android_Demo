@@ -1,11 +1,9 @@
 package com.cong.demo.xiancheng
 
 import android.os.Bundle
-import android.provider.Settings
-import android.util.Log
 import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.TimeUtils
-import com.cong.demo.BaseActivity
+import com.cong.demo.base.BaseActivity
 import com.cong.demo.R
 import kotlinx.android.synthetic.main.layout_activity_xiecheng_kotlin.*
 import kotlinx.coroutines.*

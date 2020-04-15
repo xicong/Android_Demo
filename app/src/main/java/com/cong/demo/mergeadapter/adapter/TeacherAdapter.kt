@@ -5,9 +5,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.chad.library.adapter.base.BaseQuickAdapter
-import com.chad.library.adapter.base.viewholder.BaseViewHolder
-import com.cong.demo.R
 import com.cong.demo.databinding.ItemTeacherBinding
 import com.cong.demo.mergeadapter.data.Teacher
 

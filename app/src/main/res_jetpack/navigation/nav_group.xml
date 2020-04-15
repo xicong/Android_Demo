@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_group"
+    app:startDestination="@id/fragment1">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.cong.demo.jetpack.navigation.Fragment1"
+        android:label="fragment_1"
+        tools:layout="@layout/layout_fragment_o" >
+        <action
+            android:id="@+id/action_fragment1_to_fragment2"
+            app:destination="@id/fragment2"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.cong.demo.jetpack.navigation.Fragment2"
+        android:label="fragment_2"
+        tools:layout="@layout/layout_fragment_t">
+        <action
+            android:id="@+id/action_fragment2_to_fragment1"
+            app:destination="@id/fragment1" />
+        <argument
+            android:name="name"
+            android:defaultValue="name"
+            app:argType="string" />
+        <deepLink
+            android:id="@+id/deepLink"
+            android:autoVerify="true"
+            app:uri="http://www.baidu.com" />
+        <!--
+        参数对应的name
+        
+        这种方法是隐式深层链接
+        
+        
+        显示深层链接的代码
+        val pendingIntent = NavDeepLinkBuilder(context)
+        .setGraph(R.navigation.nav_graph)
+        .setDestination(R.id.android)
+        .setArguments(args)
+        .createPendingIntent()
+        -->
+        
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:uri="http://aa.bb.com/frag2/{name}"
+            android:autoVerify="true"/>
+        
+        <!--把之前的activity作为容器-->
+        <action
+            android:id="@+id/action_fragment2_to_mobile_navigation"
+            app:destination="@id/mobile_navigation" />
+        <!--把新的activity作为容器-->
+        <action
+            android:id="@+id/action_fragment2_to_bottomNavigationActivity"
+            app:destination="@id/bottomNavigationActivity" />
+    </fragment>
+    
+    <include app:graph="@navigation/mobile_navigation" />
+    
+    <activity
+        android:id="@+id/bottomNavigationActivity"
+        android:name="com.cong.demo.jetpack.navigation.BottomNavigationActivity"
+        android:label="BottomNavigationActivity" />
+
+</navigation>
