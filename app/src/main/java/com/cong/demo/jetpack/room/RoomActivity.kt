@@ -1,6 +1,7 @@
 package com.cong.demo.jetpack.room
 
 import android.os.Bundle
+import com.blankj.utilcode.util.LogUtils
 import com.cong.demo.base.BaseActivity
 import com.cong.demo.databinding.LayoutActivityRoomBinding
 
@@ -18,5 +19,18 @@ class RoomActivity : BaseActivity(){
         super.onCreate(savedInstanceState)
         binding = LayoutActivityRoomBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        
+        var dataBase = MyDataBase.getDataBase()
+        var userDao = dataBase.userDao()
+        
+        var user = UserBean()
+        user.id = 1
+        user.age =100
+        user.name = "ldx"
+        userDao.insertData(user)
+        
+        
+        LogUtils.i(userDao.queryAll().size)
+        
     }
 }

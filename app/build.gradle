@@ -40,6 +40,10 @@ android {
                             'src/main/res_xiancheng',
                             'src/main/res_mergeadapter',
                             'src/main/res_jetpack',
+                            'src/main/res_bluetooth',
+                            'src/main/res_mvp',
+                            'src/main/res_mvvm',
+                            'src/main/res_mvc',
                     ]
         }
     }
@@ -81,7 +85,7 @@ dependencies {
     testImplementation 'junit:junit:4.13'
 
     //utils
-    implementation 'com.blankj:utilcodex:1.26.0'
+    implementation 'com.blankj:utilcodex:1.28.1'
 
     //recyclerview
 //    implementation 'androidx.recyclerview:recyclerview:1.1.0'
@@ -145,6 +149,20 @@ dependencies {
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     kapt 'com.github.bumptech.glide:compiler:4.11.0'
-
+    
+    //BasePopup
+    implementation 'com.github.razerdp:BasePopup:2.2.2.2'
+    
+    //dialog
+    implementation 'com.afollestad.material-dialogs:core:3.3.0'
+    implementation 'com.afollestad.material-dialogs:input:3.3.0'
+    implementation 'com.afollestad.material-dialogs:files:3.3.0'
+    implementation 'com.afollestad.material-dialogs:color:3.3.0'
+    implementation 'com.afollestad.material-dialogs:datetime:3.3.0'
+    implementation 'com.afollestad.material-dialogs:bottomsheets:3.3.0'
+    implementation 'com.afollestad.material-dialogs:lifecycle:3.3.0'
+    
+    //蓝牙相关的sdk
+    implementation project(path: ':monitor')
 
 }

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="mvvmModel"
+            type="com.cong.demo.mvvm.viewmodel.MvvmUserViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_activity_mvvm_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_activity_mvvm_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{mvvmModel.ageStr}"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_activity_mvvm_age_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{mvvmModel.onClick}"
+            android:text="点我年龄加1" />
+
+    </LinearLayout>
+</layout>

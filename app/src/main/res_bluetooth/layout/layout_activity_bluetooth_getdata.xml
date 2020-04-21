@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_layout_activity_getdata_supportbluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备是否支持蓝牙:未知"
+            android:textColor="#000000"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_layout_activity_getdata_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蓝牙状态:未知"
+            android:textColor="#000000"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_layout_activity_getdata_bluetooth_lgd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蓝牙已连接过的设备:"
+            android:textColor="#000000"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_layout_activity_getdata_bluetooth_syd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜到的普通的和低功耗的:"
+            android:textColor="#000000"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_layout_activity_getdata_bluetooth_dgh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="低功耗的蓝牙设备:"
+            android:textColor="#000000"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蓝牙接收到的数据为:"
+            android:textColor="#000000"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+    
+</ScrollView>

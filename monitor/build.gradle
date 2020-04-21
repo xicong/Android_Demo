@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+
+android {
+
+    compileSdkVersion 27
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+  /*  signingConfigs {
+        config {
+            keyAlias 'pillow'
+            keyPassword 'yczl123'
+            storeFile file('../pillow.jsk')
+            storePassword 'yczl123'
+        }
+    }*/
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compileOnly fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    api 'org.litepal.android:java:3.0.0'
+}

@@ -63,10 +63,10 @@ class Activity_Kotlin_XieCheng : BaseActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_activity_xiecheng_kotlin)
 
-        xiechengrunBlocking()
+//        xiechengrunBlocking()
 //        xiechenglaunch()
 //        xiechengCoroutineScope()
-//        xiechengguaqihanshu()
+        xiechengguaqihanshu()
 
         tv_activity_xiecheng_kotlin_kaishixiancheng.setOnClickListener { 
 //            xiancheng()
@@ -95,6 +95,7 @@ class Activity_Kotlin_XieCheng : BaseActivity(){
     }
     
     suspend  fun guaqihanshu(){
+        delay(6000)
         LogUtils.i("=============guaqihanshu=======${TimeUtils.getNowMills()}=========${TimeUtils.getNowString()}")
     }
     
@@ -127,10 +128,20 @@ class Activity_Kotlin_XieCheng : BaseActivity(){
         val viewModleJob = Job()    //用来取消协程
          val uiscope = CoroutineScope(Dispatchers.Main + viewModleJob) //初始化CoroutineScope指定协程的运行所在线程传入Job方便后面取消协程
          uiscope.launch { //启动一个协程 
-             updateUi()
+//             updateUi()
+             delay(6000)
+             LogUtils.i("=============00================")
          }
+        uiscope.launch {
+            LogUtils.i("=============11================")
+        }
          uiscope.async { //启动一个带返回结果的协程   Deferred.await 获取结果  有异常不会直接抛出  只会在调用await的时候抛出
+             delay(6000)
+             LogUtils.i("=============22================")
          }
+        uiscope.async {
+            LogUtils.i("=============33================")
+        }
 //         viewModleJob.cancel()   //取消协程
          //withContext启动一个协程  coroutineContext改变协程运行的上下文
     }

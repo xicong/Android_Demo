@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="file"/>
+    <version value="5"/>
+    <list>
+        <mapping class="com.wyl.monitor.entity.pneumatic_bed.DailyTotalData"/>
+        <mapping class="com.wyl.monitor.entity.pneumatic_bed.RecordsSleep"/>
+    </list>
+</litepal>
