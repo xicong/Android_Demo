@@ -1,14 +1,13 @@
 package com.cong.demo.bluetooth
 
-import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothDevice
 import android.bluetooth.le.ScanCallback
 import android.bluetooth.le.ScanResult
 
-class SystemBluetoothScanCallBack(private var bluetoothScanCallback : BluetoothScanCallback) :
+class SystemBluetoothScanCallBack(private var bluetoothScanningResultCallback : BluetoothScanningResultCallback) :
     ScanCallback() {
 
-    val scanner = mutableMapOf<String, HashMap<String, Any>>()
+    val scanner = mutableMapOf<String, BluetoothDeviceBean>()
 
     //当一个蓝牙ble广播被发现时回调
     override fun onScanResult(callbackType: Int, result: ScanResult?){
@@ -18,10 +17,14 @@ class SystemBluetoothScanCallBack(private var bluetoothScanCallback : BluetoothS
         if (result != null) {
             var map = HashMap<String, Any>()
             val device: BluetoothDevice = result.device
-            map = BluetoothHelper.parseDevice2Map(device)
-            map["rssi"] = result.rssi
-            scanner.put(map.get("address").toString(), map)
-            bluetoothScanCallback.onScan(scanner)
+//            map["rssi"] = result.rssi
+            scanner[device.address] = BluetoothDeviceBean(
+                name = if (device.name.isNullOrEmpty()) "" else device.name,
+                address = device.address,
+                type = device.type,
+                bondState = device.bondState
+            )
+            bluetoothScanningResultCallback.onScan(scanner)
         }
     }
 

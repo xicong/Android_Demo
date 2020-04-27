@@ -31,19 +31,33 @@ android {
             res.srcDirs =
                     [
                             'src/main/res',
+                            
                             'src/main/res_zidingyiview',
+                            
                             'src/main/res_shijianfenfa',
+                            
                             'src/main/res_lliaojieactivitydeqidongguocheng',
+                            
                             'src/main/res_activity',
+                            
                             'src/main/res_fragment',
+                            
                             'src/main/res_rx',
-                            'src/main/res_xiancheng',
+                            
+                            'src/main/res_xianchengorxiecheng',
+                            
                             'src/main/res_mergeadapter',
+                            
                             'src/main/res_jetpack',
+                            
                             'src/main/res_bluetooth',
+                            
                             'src/main/res_mvp',
                             'src/main/res_mvvm',
                             'src/main/res_mvc',
+                            
+                            'src/main/res_protobuf'
+                            
                     ]
         }
     }
@@ -76,13 +90,15 @@ dependencies {
     //Androidx
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.core:core-ktx:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.android.material:material:1.1.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     testImplementation 'junit:junit:4.13'
+
+    //constraintlayout
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 
     //utils
     implementation 'com.blankj:utilcodex:1.28.1'
@@ -145,10 +161,6 @@ dependencies {
     kapt "androidx.room:room-compiler:2.2.5" 
     // optional - Kotlin Extensions and Coroutines support for Room
     implementation "androidx.room:room-ktx:2.2.5"
-
-    //Glide
-    implementation 'com.github.bumptech.glide:glide:4.11.0'
-    kapt 'com.github.bumptech.glide:compiler:4.11.0'
     
     //BasePopup
     implementation 'com.github.razerdp:BasePopup:2.2.2.2'
@@ -162,7 +174,77 @@ dependencies {
     implementation 'com.afollestad.material-dialogs:bottomsheets:3.3.0'
     implementation 'com.afollestad.material-dialogs:lifecycle:3.3.0'
     
-    //蓝牙相关的sdk
-    implementation project(path: ':monitor')
+    
+    //数据库
+    implementation 'org.litepal.android:java:3.0.0'
+    
+    //banner
+    implementation 'com.youth.banner:banner:2.0.8'
+    
+    //aria下载
+    implementation 'com.arialyy.aria:core:3.8.6'
+    kapt 'com.arialyy.aria:compiler:3.8.6'
+    implementation 'com.arialyy.aria:ftpComponent:3.8.6'   //如果需要使用ftp，请增加该组件
+    implementation 'com.arialyy.aria:sftpComponent:3.8.6'  //如果需要使用ftp，请增加该组件
+    implementation 'com.arialyy.aria:m3u8Component:3.8.6'  //如果需要使用m3u8下载功能，请增加该组件
+    
+    //webview
+    implementation 'com.just.agentweb:agentweb:4.1.3' // (必选)
+    implementation 'com.just.agentweb:filechooser:4.1.3'// (可选)
+    implementation 'com.download.library:Downloader:4.1.3'// (可选)
 
+    //VideoPlayer
+    implementation 'com.shuyu:GSYVideoPlayer:7.1.3'
+    
+    //蓝牙BLE
+    //https://github.com/googlearchive/android-BluetoothLeGatt  google官方demo
+    implementation 'cn.com.superLei:blelibrary:3.0.5'
+    
+    //gson
+    implementation 'com.google.code.gson:gson:2.8.6'
+    
+    //okhttp
+    implementation "com.squareup.okhttp3:okhttp:4.5.0"
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.7.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
+    
+    //fastjson
+//    implementation 'com.alibaba:fastjson:1.2.61'
+    implementation 'com.alibaba:fastjson:1.1.71.android'
+
+    //refresh
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.2'  //1.0.5及以前版本的老用户升级需谨慎，API改动过大
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.2'  //没有使用特殊Header，可以不加这行
+
+    //FlexboxLayout
+    implementation 'com.google.android:flexbox:2.0.1'
+
+    //lottie-android
+    implementation 'com.airbnb.android:lottie:3.4.0'
+
+    //时间 日期选择器
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    kapt 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation "com.github.bumptech.glide:okhttp3-integration:4.11.0"  //用okhttp做为图片加载的底层
+    
+    //图片压缩
+    implementation 'top.zibin:Luban:1.1.8'
+    
+    //图片选择
+    implementation 'com.zhihu.android:matisse:0.5.3-beta3'
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.5.3'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation 'com.ypx.yimagepicker:androidx:3.1.4'//小红书多图剪裁+微信图片选择器+大图预览+图片剪裁(支持圆形剪裁和镂空剪裁)，已适配androidQ,借鉴并升级matisse加载内核!超强定制性可轻松实现知乎/马蜂窝/微博等特殊样式!支持跨进程回调!内部结构轻量级，无任何第三方开源库！支持support依赖！
+
+    //处理状态栏导航栏
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'// 基础依赖包，必须要依赖
+    implementation 'com.gyf.immersionbar:immersionbar-components:3.0.0'// fragment快速实现（可选）
+    implementation 'com.gyf.immersionbar:immersionbar-ktx:3.0.0'// kotlin扩展（可选）
+
+    //eventbus
+    implementation 'org.greenrobot:eventbus:3.2.0'
 }

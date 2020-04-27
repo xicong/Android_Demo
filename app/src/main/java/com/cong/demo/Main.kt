@@ -5,9 +5,9 @@ import com.blankj.utilcode.util.ActivityUtils
 import com.cong.demo.activity.Activity_Xg
 import com.cong.demo.base.BaseActivity
 import com.cong.demo.bluetooth.getdata.BluetoothGetDataActivity
-import com.cong.demo.bluetooth.senddata.BluetoothSendDataActivity
 import com.cong.demo.fragment.Fragment_Xg
 import com.cong.demo.shijianfenfa.ShijianfenfaActivity
+import com.cong.demo.zidingyiview.ZdyXinLvTuActivity
 import kotlinx.android.synthetic.main.layout_main.*
 
 class Main : BaseActivity(){
@@ -34,6 +34,7 @@ class Main : BaseActivity(){
 //        ActivityUtils.startActivity(Zdy_view_textview_Activity::class.java)
 //        ActivityUtils.startActivity(Zdy_view_jibuqi_Activity::class.java)
 //        ActivityUtils.startActivity(Zdy_View_Zhexiantu_Activity::class.java)
+        ActivityUtils.startActivity(ZdyXinLvTuActivity::class.java)  //自定义一个动态刷新的心率图
 
         
         //Acticity的生命周期
@@ -59,8 +60,8 @@ class Main : BaseActivity(){
 //        ActivityUtils.startActivity(RoomActivity::class.java)
         
         //蓝牙相关  用两个手机模拟手机与智能蓝牙硬件之间的数据互传
-        ActivityUtils.startActivity(BluetoothSendDataActivity::class.java)
-//        ActivityUtils.startActivity(BluetoothGetDataActivity::class.java)
+//        ActivityUtils.startActivity(BluetoothSendDataActivity::class.java)
+//        ActivityUtils.startActivity(BluetoothGetDataActivity::class.java)  //扫描蓝牙并连接
         
         
     }

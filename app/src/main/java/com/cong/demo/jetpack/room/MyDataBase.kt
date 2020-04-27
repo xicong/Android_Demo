@@ -24,21 +24,23 @@ abstract  class MyDataBase : RoomDatabase() {
         private var database:MyDataBase? = null
         fun getDataBase():MyDataBase{
             if(database == null){
-                database = Room.databaseBuilder(
-                    CxiApp.instance,
-                    MyDataBase::class.java,
-                    "db_xc"  //数据库名称
-                )
-//                    .addCallback()  //监听
-//                    .addMigrations(object : Migration(1,2){  //表示将数据库的版本号从1升级到2   注意不管升级或者降级都要把上面的同步改为新的版本号
-//                        override fun migrate(database: SupportSQLiteDatabase) {
-//                            database.execSQL("")
-//                        }
-//                    })  //升级时候的设置
-                    .allowMainThreadQueries()   //允许在主线程操作数据库    平时不要用防止卡掉主线程
-//                    .createFromAsset()  //不用默认的用外部数据库文件的时候设置
-//                    .createFromFile()  //不用默认的用外部数据库文件的时候设置
-                    .build()
+                database = CxiApp.instance?.let {
+                    Room.databaseBuilder(
+                        it,
+                        MyDataBase::class.java,
+                        "db_xc"  //数据库名称
+                    )
+            //                    .addCallback()  //监听
+            //                    .addMigrations(object : Migration(1,2){  //表示将数据库的版本号从1升级到2   注意不管升级或者降级都要把上面的同步改为新的版本号
+            //                        override fun migrate(database: SupportSQLiteDatabase) {
+            //                            database.execSQL("")
+            //                        }
+            //                    })  //升级时候的设置
+                        .allowMainThreadQueries()   //允许在主线程操作数据库    平时不要用防止卡掉主线程
+            //                    .createFromAsset()  //不用默认的用外部数据库文件的时候设置
+            //                    .createFromFile()  //不用默认的用外部数据库文件的时候设置
+                        .build()
+                }
             }
             return database as MyDataBase
         }

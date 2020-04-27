@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.arialyy.aria:ftpComponent:3.8.6@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/adf3ed422a726399e88cc387964d7da0/jetified-ftpComponent-3.8.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/adf3ed422a726399e88cc387964d7da0/jetified-ftpComponent-3.8.6/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.arialyy.aria/ftpComponent/3.8.6/b8f61bc25a3b0695a542c34261f3f04fdf7f2d65/ftpComponent-3.8.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.arialyy.aria/ftpComponent/3.8.6/fcf6852e8c530a56af14e3b3f4a62b252534c9df/ftpComponent-3.8.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

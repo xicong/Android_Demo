@@ -1,15 +1,12 @@
 package com.cong.demo.shijianfenfa;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
-
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.cong.demo.R;
+import com.cong.demo.base.BaseActivity;
 
-public class ShijianfenfaActivity extends AppCompatActivity {
+public class ShijianfenfaActivity extends BaseActivity {
     
     private String Tag = getClass().getName();
 

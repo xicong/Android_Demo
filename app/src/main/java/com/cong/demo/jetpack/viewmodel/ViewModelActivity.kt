@@ -22,7 +22,7 @@ class ViewModelActivity : BaseActivity(){
 
         mViewModel = ViewModelProvider(
             this,
-            ViewModelProvider.AndroidViewModelFactory.getInstance(CxiApp.instance))
+            ViewModelProvider.AndroidViewModelFactory.getInstance(CxiApp.instance!!))
             .get(CxiViewModel::class.java)
 //        binding.tvActivityViewmodelNum.text = "${mViewModel.count}"
 //        binding.tvActivityViewmodelAdd1.setOnClickListener {
