@@ -150,7 +150,7 @@ public class Zdy_view_zhexiantu extends View {
         drawX(canvas);
         drawBrokenLine(canvas);
         drawY(canvas);
-        drawLegend(canvas);
+//        drawLegend(canvas);
     }
 
     /**
@@ -279,10 +279,13 @@ public class Zdy_view_zhexiantu extends View {
             canvas.drawText(yTitles.get(i), originX - textToXYAxisGap - getTextWidth(paintText, "00.00"),
                     mHeight - paddingDown - leftRightExtra - i * intervalY + getTextHeight(paintText, "00.00") / 2, paintText);
         }
+        
+        
         // 截取折线超出部分（右边）
-        paintBack.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_OVER));
-        RectF rectF = new RectF(mWidth - paddingRight, 0, mWidth, mHeight);
-        canvas.drawRect(rectF, paintBack);
+//        paintBack.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_OVER));
+//        RectF rectF = new RectF(mWidth - paddingRight, 0, mWidth, mHeight);
+//        canvas.drawRect(rectF, paintBack);
+        
         canvas.restore();
     }
 

@@ -4,18 +4,27 @@
     <style name="AppTheme" parent="@style/Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
 
-        <!--Appbar背景色-->
+        <!-- BottomNavigationView 选中时候颜色-->
         <item name="colorPrimary">@color/colorPrimary</item>
         
-        <!--状态栏颜色-->
+        <!--全局状态栏颜色-->
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         
         <!--控制各个控件被选中时候的颜色-->
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">#AC9F2C</item>
 
         <!--window窗口没有title-->
         <item name="android:windowNoTitle">true</item>
         <item name="windowNoTitle">true</item>
+
+        <!--全局背景颜色-->
+        <item name="android:textColor">#000000</item>
+
+        <!--全局文字颜色-->
+        <item name="android:textSize">20pt</item>
+
+        <!--全局水波纹效果颜色-->
+        <item name="itemRippleColor">#52beff</item>
         
         <!--设置背景颜色-->
         <item name="android:background">#ffffff</item>

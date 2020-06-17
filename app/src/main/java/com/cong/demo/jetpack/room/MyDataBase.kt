@@ -36,7 +36,7 @@ abstract  class MyDataBase : RoomDatabase() {
             //                            database.execSQL("")
             //                        }
             //                    })  //升级时候的设置
-                        .allowMainThreadQueries()   //允许在主线程操作数据库    平时不要用防止卡掉主线程
+//                        .allowMainThreadQueries()   //允许在主线程操作数据库    平时不要用防止卡掉主线程
             //                    .createFromAsset()  //不用默认的用外部数据库文件的时候设置
             //                    .createFromFile()  //不用默认的用外部数据库文件的时候设置
                         .build()

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.arialyy.aria:m3u8Component:3.8.9@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9ebabf7f20496475806dc06436b2b663/jetified-m3u8Component-3.8.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9ebabf7f20496475806dc06436b2b663/jetified-m3u8Component-3.8.9/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.arialyy.aria/m3u8Component/3.8.9/cfa86c81fc06b8dcfb62c23eaf5cdd5cfa6b3830/m3u8Component-3.8.9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.arialyy.aria/m3u8Component/3.8.9/ad672d4acdd64ac3d1360b74c855cea1a0ee8ec7/m3u8Component-3.8.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.arialyy.aria:httpComponent:3.8.9@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/458349bc760219664ec95fe728753f0b/jetified-httpComponent-3.8.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/458349bc760219664ec95fe728753f0b/jetified-httpComponent-3.8.9/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.arialyy.aria/httpComponent/3.8.9/e9617134e89c0c24989925a0f884104855500c15/httpComponent-3.8.9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.arialyy.aria/httpComponent/3.8.9/84334e8d789d7dfa83b5f7253f47b1e1c99e98a/httpComponent-3.8.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

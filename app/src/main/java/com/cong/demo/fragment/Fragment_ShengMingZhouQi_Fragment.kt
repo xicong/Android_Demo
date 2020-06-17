@@ -8,8 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.blankj.utilcode.util.LogUtils
 import com.cong.demo.R
+import me.yokeyword.fragmentation.SupportFragment
 
-class Fragment_ShengMingZhouQi_Fragment : Fragment(){
+class Fragment_ShengMingZhouQi_Fragment : SupportFragment(){
 
     /**
      * 在Fragment 和 Activity 建立关联是调用（Activity 传递到此方法内）
@@ -22,6 +23,14 @@ class Fragment_ShengMingZhouQi_Fragment : Fragment(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         LogUtils.i("==============onCreate==================")
+    }
+
+    override fun onSupportInvisible() {
+        super.onSupportInvisible()
+    }
+
+    override fun onSupportVisible() {
+        super.onSupportVisible()
     }
 
     /**

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.arialyy.aria:sftpComponent:3.8.9@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c52911dbbd32af4c70384fc356f5d770/jetified-sftpComponent-3.8.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c52911dbbd32af4c70384fc356f5d770/jetified-sftpComponent-3.8.9/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.arialyy.aria/sftpComponent/3.8.9/cf9bdf250a578dbdf6ec115df019b24ac63a9112/sftpComponent-3.8.9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.arialyy.aria/sftpComponent/3.8.9/602ead6a09da0249a50aeeb963092acacda0e4e9/sftpComponent-3.8.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

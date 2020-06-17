@@ -6,8 +6,12 @@ import com.cong.demo.activity.Activity_Xg
 import com.cong.demo.base.BaseActivity
 import com.cong.demo.bluetooth.getdata.BluetoothGetDataActivity
 import com.cong.demo.fragment.Fragment_Xg
+import com.cong.demo.jetpack.livedata.LIveDataActivity
+import com.cong.demo.jetpack.navigation.NavigationDemo
+import com.cong.demo.jetpack.room.RoomActivity
 import com.cong.demo.shijianfenfa.ShijianfenfaActivity
 import com.cong.demo.zidingyiview.ZdyXinLvTuActivity
+import com.cong.demo.zidingyiview.Zdy_View_Zhexiantu_Activity
 import kotlinx.android.synthetic.main.layout_main.*
 
 class Main : BaseActivity(){
@@ -33,8 +37,8 @@ class Main : BaseActivity(){
 //        ActivityUtils.startActivity(ZdyViewActivity::class.java)
 //        ActivityUtils.startActivity(Zdy_view_textview_Activity::class.java)
 //        ActivityUtils.startActivity(Zdy_view_jibuqi_Activity::class.java)
-//        ActivityUtils.startActivity(Zdy_View_Zhexiantu_Activity::class.java)
-        ActivityUtils.startActivity(ZdyXinLvTuActivity::class.java)  //自定义一个动态刷新的心率图
+        ActivityUtils.startActivity(Zdy_View_Zhexiantu_Activity::class.java)
+//        ActivityUtils.startActivity(ZdyXinLvTuActivity::class.java)  //自定义一个动态刷新的心率图
 
         
         //Acticity的生命周期

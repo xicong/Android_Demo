@@ -14,7 +14,7 @@ abstract  class UserDao {
     
     //vararg 可变参数
     @Update
-    abstract fun updateData(vararg user:UserBean)
+    abstract fun updateData(vararg user:UserBean):Int
     
     @Query("select * from t_user")
     abstract fun queryAll():List<UserBean>
