@@ -1,5 +1,6 @@
 package com.cong.demo.app
 import android.app.Application
+import com.cxi.permission_lib.app.PerApp
 
 class CxiApp : Application(){
     
@@ -17,6 +18,7 @@ class CxiApp : Application(){
     override fun onCreate() {
         super.onCreate()
         instance = this
+        PerApp.permissionInit(this,true)
     }
     
 }

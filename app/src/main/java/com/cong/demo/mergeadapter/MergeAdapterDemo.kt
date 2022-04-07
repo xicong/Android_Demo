@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.MergeAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.cong.demo.base.BaseActivity
 import com.cong.demo.databinding.LayoutActivityMergeadapterBinding
@@ -43,14 +42,14 @@ class MergeAdapterDemo : BaseActivity(){
         binding.rvActivityMergeadapter.run {this@MergeAdapterDemo
             val manager = LinearLayoutManager(this@MergeAdapterDemo)
             layoutManager = manager
-            adapter = MergeAdapter(teacherAdapter, studentAdapter, footAdapter)
-            addOnScrollListener(object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-                    if (dy > 0 && manager.findLastVisibleItemPosition() == manager.itemCount - 1) {
-                        mViewModel.loadStudent()
-                    }
-                }
-            })
+//            adapter = MergeAdapter(teacherAdapter, studentAdapter, footAdapter)
+//            addOnScrollListener(object : RecyclerView.OnScrollListener() {
+//                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+//                    if (dy > 0 && manager.findLastVisibleItemPosition() == manager.itemCount - 1) {
+//                        mViewModel.loadStudent()
+//                    }
+//                }
+//            })
         }
     }
 

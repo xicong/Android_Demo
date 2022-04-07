@@ -2,6 +2,8 @@ package com.cong.demo.xianchengofxiecheng
 
 import android.os.Bundle
 import com.blankj.utilcode.util.LogUtils
+import com.blankj.utilcode.util.ScreenUtils
+import com.blankj.utilcode.util.SizeUtils
 import com.blankj.utilcode.util.TimeUtils
 import com.cong.demo.base.BaseActivity
 import com.cong.demo.R
@@ -66,21 +68,73 @@ class KotlinXieChengActivity : BaseActivity(){
         mBinding = LayoutActivityXiechengKotlinBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
 
-//        xiechengrunBlocking()
-//        xiechenglaunch()
-//        xiechengCoroutineScope()
-        xiechengguaqihanshu()
+//        tongbuxiecheng()  //同步协程
+//        yibuxiecheng()   //异步协程
 
-        tv_activity_xiecheng_kotlin_kaishixiancheng.setOnClickListener { 
-//            xiancheng()
+//        xiechengrunBlocking()  //runBlocking  创建新的协程，运行在当前线程上，所以会阻塞当前线程，直到协程体结束
+//        xiechenglaunch()  //启动一个新的线程，在新线程上创建运行协程，不阻塞当前线程
+//        xiechengCoroutineScope()  //创建新一个子域，并管理域中的所有协程
+//        xiechengguaqihanshu()  //挂起函数
+        
+        
+        println("-------------------${ScreenUtils.getScreenWidth()}")
+        println("-------------------${SizeUtils.px2dp(ScreenUtils.getScreenWidth().toFloat())}")
+    }
+    
+    //实现一个同步协程
+    fun tongbuxiecheng(){
+        val job=GlobalScope.launch {
+            tongbuxiecheng_1()
+            tongbuxiecheng_2()
+//            withContext(Dispatchers.IO){
+//            }
+//            withContext(Dispatchers.IO){
+//            }
         }
     }
+    suspend fun  tongbuxiecheng_1(){
+        for (i in 0..3){
+            delay(1000)
+            println("-------------tongbuxiecheng_1----------------")
+        }
+    }
+    suspend fun  tongbuxiecheng_2(){
+        for (i in 0..3){
+            delay(1000)
+            println("-------------tongbuxiecheng_2----------------")
+        }
+    }
+    
+    
+    
+    //实现一个异步协程
+    fun yibuxiecheng(){
+        val job=GlobalScope.launch {
+            async {
+                yibuxiecheng_1()
+            }
+            async {
+                yibuxiecheng_2()
+            }
+        }
+    }
+    suspend fun  yibuxiecheng_1(){
+        for (i in 0..3){
+            println("-------------yibuxiecheng_1----------------")
+            delay(1000)
+        }
+    }
+    suspend fun  yibuxiecheng_2(){
+        for (i in 0..3){
+            println("-------------yibuxiecheng_2----------------")
+            delay(1000)
+        }
+    }
+    
 
     /**
      * 学习一下协程的挂起函数
-     * 
      * 挂起函数只能在协程中或者其他挂起函数中调用
-     * 
      * 挂起函数挂起协程时，不会阻塞协程所在的线程，挂起函数执行完成后会恢复协程，后面的代码才会继续执行，
      */
     fun xiechengguaqihanshu(){
@@ -200,26 +254,5 @@ class KotlinXieChengActivity : BaseActivity(){
         LogUtils.i("=============runBlocking代码结束之后=====${TimeUtils.getNowMills()}===========")
     }
     
-    /**
-     * 一般java中获取线程的返回值要通过callback
-     */
-    fun xiancheng(){
-        LogUtils.i("=======协程代码之前===========")
-        //协程的创建方式launch
-        //还有一个方式async
-        var xc = GlobalScope.launch {
-            //后台耗时操作
-            LogUtils.i("=======开始计数===========")
-            for (i in 0..10000){
-                delay(1000)
-                ++num
-            }
-            LogUtils.i("=======计数结束===========")
-        }
-        LogUtils.i("=======协程代码之后===========")
-//        xc.cancel()  //线程退出
-    }
-    
-//    tv_activity_xiecheng_kotlin_num.text = "${i}"
     
 }

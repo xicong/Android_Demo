@@ -14,8 +14,11 @@ class ImageAdapter {
          * requireAll 参数必须全部都有
          */
         @JvmStatic
-        @BindingAdapter(value = ["bind:url"],requireAll = true)
+        @BindingAdapter(value = ["android:url"],requireAll = true)
         fun loadImage(imageview:ImageView,url:String?){
+            if (url.isNullOrEmpty()){
+                return
+            }
             Glide.with(imageview)
                 .load(url)
                 .into(imageview)

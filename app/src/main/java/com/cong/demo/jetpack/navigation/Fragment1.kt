@@ -6,14 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.cong.demo.R
 import com.cong.demo.base.BaseFragment
 import com.cong.demo.databinding.LayoutFragmentOBinding
+import kotlinx.android.synthetic.main.layout_main.*
 
 class Fragment1 : BaseFragment() {
 
     private lateinit var binding:LayoutFragmentOBinding
 
+
+    var mList = arrayListOf<String>()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -40,7 +44,19 @@ class Fragment1 : BaseFragment() {
 //            apply plugin: 'androidx.navigation.safeargs'
 //            implementation 'androidx.navigation:navigation-safe-args-gradle-plugin:2.3.0-alpha04'
             controller.navigate(Fragment1Directions.actionFragment1ToFragment2("你好"))
+            
+            
+
+            
         }
+
+        mList.clear()
+        for (i in 0..100){
+            mList.add("$i")
+        }
+        binding.recyclerview.layoutManager = LinearLayoutManager(context)
+        val ad = NvRvAdapter(mList)
+        binding.recyclerview.adapter = ad
     }
 
 }

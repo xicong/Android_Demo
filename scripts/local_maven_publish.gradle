@@ -1,0 +1,73 @@
+apply plugin: 'maven-publish'
+
+/**
+ * 生成本地仓库
+ * ./gradlew build    生成命令
+ * ./gradlew publishToMavenLocal   生成本地aar
+ * 生成后的位置 /Users/xc/.m2/repository
+ * 在项目根目录创建 reno 目录
+ * 将/Users/xc/.m2/repository目录下包名的文件夹拷贝到 reno 里面
+ * 在要使用这个 aar 的项目的根目录的 build.gradle 文件的repositories里面添加maven { url 'file:///Users/xc/Desktop/app_android_qianyinzhen/reno/' } 并注意修改这里的路径
+ * 在要使用这个 aar 的项目的 app 目录里面的 build.gradle 文件的dependencies下面增加implementation 'com.cxi.lib:CxiApplib:202103251612'
+ * 然后 clean 并重新编译即可
+ * 
+ * ./gradlew :module_lib_ble:clean :module_lib_ble:publishToMavenLocal
+ * ./gradlew :module_lib_comm:clean :module_lib_comm:publishToMavenLocal
+ */
+
+static def mavenVersion() {
+//    return  "${new Date().format("yyyyMMddHHmm", TimeZone.getTimeZone("GMT+08:00"))}"
+    return  "${new Date().format("yyyyMMddHHmm", TimeZone.getTimeZone("GMT+08:00"))}-SNAPSHOT"
+}
+
+ tasks.whenTaskAdded { task ->
+     if ("assembleRelease" == task.name) {
+        publishToMavenLocal.dependsOn assembleRelease
+     }
+ }
+
+ task generateSourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier 'sources'
+ }
+
+ publishing {
+     
+     publications {
+         maven(MavenPublication) {
+             
+             groupId project.ext.lib_groupId
+             version project.ext.lib_version
+             artifactId project.ext.lib_artifactId
+             
+             pom.withXml {
+                 def dependenciesNode = asNode().appendNode('dependencies')
+
+                 // 避免出现空节点或 artifactId=unspecified 的节点
+                 configurations.api.allDependencies.each {
+                     if (it.group != null && (it.name != null && "unspecified" != it.name) && (it.version != null&& "unspecified" != it.version)) {
+                         def dependencyNode = dependenciesNode.appendNode('dependency')
+                         dependencyNode.appendNode('groupId', it.group)
+                         dependencyNode.appendNode('artifactId', it.name)
+                         dependencyNode.appendNode('version', it.version)
+                         dependencyNode.appendNode('scope', 'implementation')
+                         println(it.group+"----"+it.name+"----"+it.version)
+                     }
+                 }
+             }
+         }
+     }
+
+     //定义目标仓库 (包所存放的地方)
+     repositories{
+         
+         //发布到本地maven仓库 (~/.m2/repository)  
+         // aar 目录在project的 build/outputs/aar/module_lib_comm-release.aar
+//         mavenLocal()
+
+         //发布到自定义的目录
+         maven {
+             url '../repo' //本地仓库 (包存放在项目更目录下的repo目录)
+         }
+     }
+ }

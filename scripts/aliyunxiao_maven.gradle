@@ -1,0 +1,59 @@
+//gradle 7.0 已经删除了maven等相关
+apply plugin: 'maven'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: 'https://packages.aliyun.com/maven/repository/2089426-release-V1AFss/') {
+                authentication(
+                        userName: '605ea0d168e8851ace7b9d8d',
+                        password: 'Z65hVhLWQyUk'
+                )
+            }
+            snapshotRepository(url: 'https://packages.aliyun.com/maven/repository/2089426-snapshot-8mkHD6/') {
+                authentication(
+                        userName: '605ea0d168e8851ace7b9d8d',
+                        password: 'Z65hVhLWQyUk'
+                )
+            }
+            pom{
+                version =  project.ext.lib_version
+                artifactId =  project.ext.lib_artifactId
+                groupId =  project.ext.lib_groupId
+            }
+        }
+    }
+}
+
+
+/**
+ * 上传到阿里云仓库
+ *  ./gradlew build    生成命令
+ *  ./gradlew task uploadArchives        推送命令 默认推送所有的
+ *  ./gradlew :module_lib_comm:clean :module_lib_comm:uploadArchives   该命令可以推送指定的 lib
+ *  ./gradlew :module_lib_ble:clean :module_lib_ble:uploadArchives     该命令可以推送指定的 lib
+ *  然后在要使用这个的项目的跟目录下面的 build.gradle 里面的repositories下面增加下面代码
+ *  在要使用这个 aar 的项目的 app 目录里面的 build.gradle 文件的dependencies下面增加implementation 'com.cxi.lib:CxiApplib:202103251612'
+ * 然后 clean 并重新编译即可
+ allprojects {
+    repositories {
+         maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+         maven {
+             credentials {
+                 username '605ea0d168e8851ace7b9d8d'
+                 password 'Z65hVhLWQyUk'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2089426-release-V1AFss/'
+        }
+        maven {
+            credentials {
+                username '605ea0d168e8851ace7b9d8d'
+                password 'Z65hVhLWQyUk'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2089426-snapshot-8mkHD6/'
+        }
+    }
+ }
+ * */

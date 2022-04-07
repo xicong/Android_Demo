@@ -1,2 +1,4 @@
 rootProject.name='Android_Demo'
 include ':app'
+include ':xc_permission_lib'
+include ':anim'

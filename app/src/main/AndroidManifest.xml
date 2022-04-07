@@ -1,60 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cong.demo">
+package="com.cong.demo">
 
-    <!-- 网络 -->
-    <uses-permission android:name="android.permission.INTERNET" />
+<!-- 网络 -->
+<uses-permission android:name="android.permission.INTERNET" />
 
-    <!-- 蓝牙 -->
-    <uses-permission android:name="android.permission.BLUETOOTH"/>
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>  <!-- 声明应用仅适用于支持低功耗的设备  true不支持低功耗的设备不能安装 -->
+<!-- 蓝牙 -->
+<uses-permission android:name="android.permission.BLUETOOTH" />
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-    <application
-        android:name=".app.CxiApp"
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Main">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".shijianfenfa.ShijianfenfaActivity" />
-        <activity android:name=".zidingyiview.Zdy_view_jibuqi_Activity" />
-        <activity android:name=".zidingyiview.Zdy_view_textview_Activity" />
-        <activity android:name=".fragment.Fragment_ShengMingZhouQi" />
-        <activity android:name=".activity.Activity_ShengMingZhouQi" />
-        <activity android:name=".activity.Activity_Xg" />
-        <activity android:name=".fragment.Fragment_Xg" />
-        <activity android:name=".xianchengofxiecheng.KotlinXieChengActivity" />
-        <activity android:name=".xianchengofxiecheng.JavaThreadActivity" />
-        <activity android:name=".mergeadapter.MergeAdapterDemo" />
-        <activity android:name=".zidingyiview.Zdy_View_Zhexiantu_Activity" />
-        <activity android:name=".jetpack.lifecycle.LifecycleActivity" />
-        <activity android:name=".jetpack.viewmodel.ViewModelActivity" />
-        <activity android:name=".jetpack.livedata.LIveDataActivity" />
-        <activity android:name=".jetpack.databinding.DataBindingActivity" />
-        <activity android:name=".jetpack.LifeCycleViewModelLIveDataDataBindingDemo" />
-        <activity android:name=".jetpack.navigation.NavigationDemo">
-            <nav-graph android:value="@navigation/nav_group" />
-        </activity>
-        <activity android:name=".jetpack.navigation.BottomNavigationActivity" />
-        <activity android:name=".jetpack.room.RoomActivity" />
-        <activity android:name=".bluetooth.getdata.BluetoothGetDataActivity" />
-        <activity android:name=".bluetooth.senddata.BluetoothSendDataActivity" />
-        <activity android:name=".bluetooth.getdata.DeviceControlActivity"/>
-        <service android:name=".bluetooth.BluetoothLeService" android:enabled="true"/><!--是否启用这个服务-->
-        <activity android:name=".mvc.controllerandview.MvcActivity" />
-        <activity android:name=".mvp.view.MvpActivity" />
-        <activity android:name=".mvvm.view.MvvmActivity" />
-        <activity android:name=".zidingyiview.ZdyXinLvTuActivity"/>
-    </application>
+<uses-feature
+    android:name="android.hardware.bluetooth_le"
+    android:required="true" />  <!-- 声明应用仅适用于支持低功耗的设备  true不支持低功耗的设备不能安装 -->
+
+<application
+    android:name=".app.CxiApp"
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <activity android:name=".Main">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity android:name=".shijianfenfa.ShijianfenfaActivity" />
+    <activity android:name=".zidingyiview.Zdy_view_jibuqi_Activity" />
+    <activity android:name=".zidingyiview.Zdy_view_textview_Activity" />
+    <activity android:name=".fragment.Fragment_ShengMingZhouQi" />
+    <activity android:name=".activity.Activity_ShengMingZhouQi" />
+    <activity android:name=".activity.Activity_Xg" />
+    <activity android:name=".fragment.Fragment_Xg" />
+    <activity android:name=".xianchengofxiecheng.KotlinXieChengActivity" />
+    <activity android:name=".xianchengofxiecheng.JavaThreadActivity" />
+    <activity android:name=".mergeadapter.MergeAdapterDemo" />
+    <activity android:name=".zidingyiview.Zdy_View_Zhexiantu_Activity" />
+    <activity android:name=".jetpack.lifecycle.LifecycleActivity" />
+    <activity android:name=".jetpack.viewmodel.ViewModelActivity" />
+    <activity android:name=".jetpack.livedata.LIveDataActivity" />
+    <activity android:name=".jetpack.databinding.DataBindingActivity" />
+    <activity android:name=".jetpack.LifeCycleViewModelLIveDataDataBindingDemo" />
+    <activity android:name=".jetpack.navigation.NavigationDemo">
+        <nav-graph android:value="@navigation/nav_group" />
+    </activity>
+    <activity android:name=".jetpack.navigation.BottomNavigationActivity" />
+    <activity android:name=".jetpack.room.RoomActivity" />
+    <activity android:name=".bluetooth.getdata.BluetoothGetDataActivity" />
+    <activity android:name=".bluetooth.senddata.BluetoothSendDataActivity" />
+    <activity android:name=".bluetooth.getdata.DeviceControlActivity" />
+    <activity
+        android:name="com.cong.demo.utils.UtilsActivity"
+        android:exported="true" />
+
+    <service
+        android:name=".bluetooth.BluetoothLeService"
+        android:enabled="true" /><!--是否启用这个服务-->
+    <activity android:name=".mvc.controllerandview.MvcActivity" />
+    <activity android:name=".mvp.view.MvpActivity" />
+    <activity android:name=".mvvm.view.MvvmActivity" />
+    <activity android:name=".zidingyiview.ZdyXinLvTuActivity" />
+</application>
 </manifest>
-    

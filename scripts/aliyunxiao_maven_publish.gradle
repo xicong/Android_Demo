@@ -1,0 +1,36 @@
+apply plugin: 'maven-publish'
+/**
+ * ./gradlew publishMavenPublicationToMavenRepository
+ * ./gradlew :module_lib_comm:clean :module_lib_comm:publishMavenPublicationToMavenRepository
+ * ./gradlew :module_lib_ble:clean :module_lib_ble:publishMavenPublicationToMavenRepository
+ * ./gradlew :xc_permission_lib:clean :xc_permission_lib:publishMavenPublicationToMavenRepository
+ */
+
+afterEvaluate {
+    publishing {
+        publications {
+            mavenBasepopup(MavenPublication) {
+                from components.release
+                version =  project.ext.lib_version
+                artifactId =  project.ext.lib_artifactId
+                groupId =  project.ext.lib_groupId
+                println "***********************************************************"+project.ext.lib_version
+//                println "***********************************************************"+rootProject.name  //app_android_zhinengzhen
+//                println "***********************************************************"+rootProject.project.name  //app_android_zhinengzhen
+//                println "***********************************************************"+project.name  //module_lib_ble
+//                println "***********************************************************"+project.app_application_id  //com.zytc.jzznz
+            }
+        }
+        repositories {
+            maven {
+                //指定要上传的maven私服仓库
+                url = "https://packages.aliyun.com/maven/repository/2089426-snapshot-8mkHD6/"
+                //认证用户和密码
+                credentials {
+                    username '605ea0d168e8851ace7b9d8d'
+                    password 'Z65hVhLWQyUk'
+                }
+            }
+        }
+    }
+}

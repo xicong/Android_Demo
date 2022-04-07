@@ -67,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="#000000"
-            bind:url = "@{user_bean.avator}"
+            android:url = "@{user_bean.avator}"
             android:scaleType="fitXY"
             />
         

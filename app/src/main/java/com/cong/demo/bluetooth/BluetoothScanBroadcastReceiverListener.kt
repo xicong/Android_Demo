@@ -30,7 +30,7 @@ class BluetoothScanBroadcastReceiverListener(private val bluetoothScanningResult
     override fun onReceive(context: Context?, intent: Intent?) {
         when(intent!!.action){
             BluetoothDevice.ACTION_FOUND ->{
-                var device : BluetoothDevice = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE)
+                var device : BluetoothDevice = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE)!!
                 //获取蓝牙信号强度
 //                var  rssi = intent.getShortExtra(BluetoothDevice.EXTRA_RSSI,0)
 //                map["rssi"] = rssi

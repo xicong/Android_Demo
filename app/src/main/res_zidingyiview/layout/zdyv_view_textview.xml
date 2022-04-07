@@ -4,12 +4,16 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     
-    <com.cong.demo.zidingyiview.Zdy_view_text
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:my_text="你好啊"
-        app:my_text_color="#000000"
-        app:my_text_size="20sp"
-        />
+<!--    <com.cong.demo.zidingyiview.Zdy_view_text-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:my_text="你好啊"-->
+<!--        app:my_text_color="#000000"-->
+<!--        app:my_text_size="20sp"-->
+<!--        />-->
+    
+    <com.cong.demo.zidingyiview.RegionView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </FrameLayout>

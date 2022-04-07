@@ -10,8 +10,11 @@ import com.cong.demo.jetpack.livedata.LIveDataActivity
 import com.cong.demo.jetpack.navigation.NavigationDemo
 import com.cong.demo.jetpack.room.RoomActivity
 import com.cong.demo.shijianfenfa.ShijianfenfaActivity
+import com.cong.demo.utils.UtilsActivity
+import com.cong.demo.xianchengofxiecheng.KotlinXieChengActivity
 import com.cong.demo.zidingyiview.ZdyXinLvTuActivity
 import com.cong.demo.zidingyiview.Zdy_View_Zhexiantu_Activity
+import com.cong.demo.zidingyiview.Zdy_view_textview_Activity
 import kotlinx.android.synthetic.main.layout_main.*
 
 class Main : BaseActivity(){
@@ -37,7 +40,7 @@ class Main : BaseActivity(){
 //        ActivityUtils.startActivity(ZdyViewActivity::class.java)
 //        ActivityUtils.startActivity(Zdy_view_textview_Activity::class.java)
 //        ActivityUtils.startActivity(Zdy_view_jibuqi_Activity::class.java)
-        ActivityUtils.startActivity(Zdy_View_Zhexiantu_Activity::class.java)
+//        ActivityUtils.startActivity(Zdy_View_Zhexiantu_Activity::class.java)
 //        ActivityUtils.startActivity(ZdyXinLvTuActivity::class.java)  //自定义一个动态刷新的心率图
 
         
@@ -49,7 +52,7 @@ class Main : BaseActivity(){
         
         //线程相关
 //        ActivityUtils.startActivity(Activity_Thread_Java::class.java)
-//        ActivityUtils.startActivity(Activity_Kotlin_XieCheng::class.java)
+//        ActivityUtils.startActivity(KotlinXieChengActivity::class.java)
         
         //MergeAdapter
 //        ActivityUtils.startActivity(MergeAdapterDemo::class.java)
@@ -66,6 +69,9 @@ class Main : BaseActivity(){
         //蓝牙相关  用两个手机模拟手机与智能蓝牙硬件之间的数据互传
 //        ActivityUtils.startActivity(BluetoothSendDataActivity::class.java)
 //        ActivityUtils.startActivity(BluetoothGetDataActivity::class.java)  //扫描蓝牙并连接
+        
+        //utils
+        ActivityUtils.startActivity(UtilsActivity::class.java)
         
         
     }
