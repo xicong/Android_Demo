@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.blankj:utilcodex:1.30.7-alpha0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c2f2ddd049253a96ae467359784b36e7/transformed/jetified-utilcodex-1.30.7-alpha0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c2f2ddd049253a96ae467359784b36e7/transformed/jetified-utilcodex-1.30.7-alpha0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c2f2ddd049253a96ae467359784b36e7/transformed/jetified-utilcodex-1.30.7-alpha0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c2f2ddd049253a96ae467359784b36e7/transformed/jetified-utilcodex-1.30.7-alpha0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.blankj/utilcodex/1.30.7-alpha0/33bcbe0af598e4268557256e9bf87b6abf92f7bf/utilcodex-1.30.7-alpha0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
