@@ -3,6 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4894f13bc31d2ad7311a85f64ca896e9/jetified-gsyVideoPlayer-x64-7.1.3/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4894f13bc31d2ad7311a85f64ca896e9/jetified-gsyVideoPlayer-x64-7.1.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6c9bb0b9ef271c9e4b0a78ee79a2dc5d/transformed/jetified-gsyVideoPlayer-x64-7.1.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6c9bb0b9ef271c9e4b0a78ee79a2dc5d/transformed/jetified-gsyVideoPlayer-x64-7.1.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6c9bb0b9ef271c9e4b0a78ee79a2dc5d/transformed/jetified-gsyVideoPlayer-x64-7.1.4/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.shuyu/gsyVideoPlayer-x64/7.1.4/d4c92e744662db5be266d4a595cb347407e6b282/gsyVideoPlayer-x64-7.1.4-javadoc.jar!/" />

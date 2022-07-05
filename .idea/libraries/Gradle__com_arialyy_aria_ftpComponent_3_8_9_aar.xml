@@ -3,6 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e0f29a88681661f2c07d997f211863c3/jetified-ftpComponent-3.8.9/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e0f29a88681661f2c07d997f211863c3/jetified-ftpComponent-3.8.9/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/99543fa173afcc4bce76116194df39ab/transformed/jetified-ftpComponent-3.8.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/99543fa173afcc4bce76116194df39ab/transformed/jetified-ftpComponent-3.8.9/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/99543fa173afcc4bce76116194df39ab/transformed/jetified-ftpComponent-3.8.9/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.arialyy.aria/ftpComponent/3.8.9/aaf14f695bd36c4bf962b22b8d5f94df322d0d24/ftpComponent-3.8.9-javadoc.jar!/" />

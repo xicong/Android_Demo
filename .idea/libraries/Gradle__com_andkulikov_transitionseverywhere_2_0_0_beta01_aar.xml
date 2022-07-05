@@ -3,6 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1c117b874c486f90e8a1361b3583e184/jetified-transitionseverywhere-2.0.0-beta01/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1c117b874c486f90e8a1361b3583e184/jetified-transitionseverywhere-2.0.0-beta01/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1ecdefb7032b8f5b387c5414b3fc54f1/transformed/jetified-transitionseverywhere-2.0.0-beta01/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1ecdefb7032b8f5b387c5414b3fc54f1/transformed/jetified-transitionseverywhere-2.0.0-beta01/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1ecdefb7032b8f5b387c5414b3fc54f1/transformed/jetified-transitionseverywhere-2.0.0-beta01/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.andkulikov/transitionseverywhere/2.0.0-beta01/1cc96719538e8a0d18a71d74a3c998e3df9228e9/transitionseverywhere-2.0.0-beta01-javadoc.jar!/" />

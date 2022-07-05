@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Android_Demo.iml" filepath="$PROJECT_DIR$/Android_Demo.iml" group="Android_Demo" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Android_Demo/app" />
+      <module fileurl="file://$PROJECT_DIR$/Android_Demo.iml" filepath="$PROJECT_DIR$/Android_Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apps/Android_Demo.apps.iml" filepath="$PROJECT_DIR$/.idea/modules/apps/Android_Demo.apps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apps/anim/Android_Demo.apps.anim.iml" filepath="$PROJECT_DIR$/.idea/modules/apps/anim/Android_Demo.apps.anim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apps/anim/Android_Demo.apps.anim.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/apps/anim/Android_Demo.apps.anim.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apps/anim/Android_Demo.apps.anim.main.iml" filepath="$PROJECT_DIR$/.idea/modules/apps/anim/Android_Demo.apps.anim.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apps/anim/Android_Demo.apps.anim.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/apps/anim/Android_Demo.apps.anim.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apps/demo/Android_Demo.apps.demo.iml" filepath="$PROJECT_DIR$/.idea/modules/apps/demo/Android_Demo.apps.demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apps/demo/Android_Demo.apps.demo.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/apps/demo/Android_Demo.apps.demo.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apps/demo/Android_Demo.apps.demo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/apps/demo/Android_Demo.apps.demo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apps/demo/Android_Demo.apps.demo.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/apps/demo/Android_Demo.apps.demo.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/Android_Demo.libs.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/Android_Demo.libs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/xc_permission_lib/Android_Demo.libs.xc_permission_lib.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/xc_permission_lib/Android_Demo.libs.xc_permission_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/xc_permission_lib/Android_Demo.libs.xc_permission_lib.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/xc_permission_lib/Android_Demo.libs.xc_permission_lib.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/xc_permission_lib/Android_Demo.libs.xc_permission_lib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/xc_permission_lib/Android_Demo.libs.xc_permission_lib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/xc_permission_lib/Android_Demo.libs.xc_permission_lib.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/xc_permission_lib/Android_Demo.libs.xc_permission_lib.unitTest.iml" />
     </modules>
   </component>
 </project>

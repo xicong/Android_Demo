@@ -3,12 +3,20 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a01605ccf0433b8d8927d71fd8d57a8f/jetified-agentweb-4.1.3/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a01605ccf0433b8d8927d71fd8d57a8f/jetified-agentweb-4.1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ce2012340f4c0160f1f3b57a0449ede5/transformed/jetified-agentweb-4.1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ce2012340f4c0160f1f3b57a0449ede5/transformed/jetified-agentweb-4.1.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ce2012340f4c0160f1f3b57a0449ede5/transformed/jetified-agentweb-4.1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f35e0e8c6798f64c1907c31afcaf72c7/transformed/jetified-agentweb-4.1.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f35e0e8c6798f64c1907c31afcaf72c7/transformed/jetified-agentweb-4.1.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f35e0e8c6798f64c1907c31afcaf72c7/transformed/jetified-agentweb-4.1.3/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.just.agentweb/agentweb/4.1.3/a8743cbfe3b1d90de273a3900cdcb31ea178734f/agentweb-4.1.3-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.just.agentweb/agentweb/4.1.3/3c59bb659c4409e722c957ad75dda86fb55caa4/agentweb-4.1.3-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.just.agentweb/agentweb/4.1.3/6d26fca8369044a1092b1b0fcce0d4cc53afb341/agentweb-4.1.3-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.just.agentweb/agentweb/4.1.3/f8721d86c9818e60f03b708cd0e871e63d3421b8/agentweb-4.1.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

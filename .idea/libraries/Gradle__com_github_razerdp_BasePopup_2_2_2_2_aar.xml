@@ -3,6 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e6c037ba313cd3e7877f0cfe4a722d00/jetified-BasePopup-2.2.2.2/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e6c037ba313cd3e7877f0cfe4a722d00/jetified-BasePopup-2.2.2.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/aa252747c9f00023b7d63800de3252bf/transformed/jetified-BasePopup-2.2.2.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/aa252747c9f00023b7d63800de3252bf/transformed/jetified-BasePopup-2.2.2.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/aa252747c9f00023b7d63800de3252bf/transformed/jetified-BasePopup-2.2.2.2/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.razerdp/BasePopup/2.2.2.2/84d0af465346097acf59309a98a2d44ef7b18da1/BasePopup-2.2.2.2-javadoc.jar!/" />

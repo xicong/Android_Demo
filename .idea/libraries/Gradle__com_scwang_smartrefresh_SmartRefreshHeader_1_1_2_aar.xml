@@ -2,10 +2,18 @@
   <library name="Gradle: com.scwang.smartrefresh:SmartRefreshHeader:1.1.2@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8e6f53d26dbcaf10e66cbbf6189635dc/jetified-SmartRefreshHeader-1.1.2/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/843c0a6fb2f001531ec8b3fc7fc92721/transformed/jetified-SmartRefreshHeader-1.1.2/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/4431a3c3bdbda552a00fbc9bccc17b7c/transformed/jetified-SmartRefreshHeader-1.1.2/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8e6f53d26dbcaf10e66cbbf6189635dc/jetified-SmartRefreshHeader-1.1.2/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8e6f53d26dbcaf10e66cbbf6189635dc/jetified-SmartRefreshHeader-1.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/843c0a6fb2f001531ec8b3fc7fc92721/transformed/jetified-SmartRefreshHeader-1.1.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/843c0a6fb2f001531ec8b3fc7fc92721/transformed/jetified-SmartRefreshHeader-1.1.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/843c0a6fb2f001531ec8b3fc7fc92721/transformed/jetified-SmartRefreshHeader-1.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4431a3c3bdbda552a00fbc9bccc17b7c/transformed/jetified-SmartRefreshHeader-1.1.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/4431a3c3bdbda552a00fbc9bccc17b7c/transformed/jetified-SmartRefreshHeader-1.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4431a3c3bdbda552a00fbc9bccc17b7c/transformed/jetified-SmartRefreshHeader-1.1.2/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.scwang.smartrefresh/SmartRefreshHeader/1.1.2/a39f869be8c9e583b0c9a3042cf5a139e138d1a5/SmartRefreshHeader-1.1.2-javadoc.jar!/" />

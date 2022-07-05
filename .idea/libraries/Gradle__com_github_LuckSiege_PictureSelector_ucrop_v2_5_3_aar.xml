@@ -2,10 +2,14 @@
   <library name="Gradle: com.github.LuckSiege.PictureSelector:ucrop:v2.5.3@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/efa026fc37a8eb77dc5a0c49f7ee387d/jetified-ucrop-v2.5.3/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2c444fe91c795139958225a3e5784183/transformed/jetified-ucrop-v2.5.3/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/efa026fc37a8eb77dc5a0c49f7ee387d/jetified-ucrop-v2.5.3/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/efa026fc37a8eb77dc5a0c49f7ee387d/jetified-ucrop-v2.5.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2c444fe91c795139958225a3e5784183/transformed/jetified-ucrop-v2.5.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2c444fe91c795139958225a3e5784183/transformed/jetified-ucrop-v2.5.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2c444fe91c795139958225a3e5784183/transformed/jetified-ucrop-v2.5.3/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

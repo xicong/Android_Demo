@@ -3,6 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7f9c50bf1c1a45d6e5569f7c17a2c407/jetified-Luban-1.1.8/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7f9c50bf1c1a45d6e5569f7c17a2c407/jetified-Luban-1.1.8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4558e869016f8c4c4e0a90127d52ac94/transformed/jetified-Luban-1.1.8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/4558e869016f8c4c4e0a90127d52ac94/transformed/jetified-Luban-1.1.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4558e869016f8c4c4e0a90127d52ac94/transformed/jetified-Luban-1.1.8/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/top.zibin/Luban/1.1.8/7b76e6b4218faa86ff4b2361f27a40b4b016c68d/Luban-1.1.8-javadoc.jar!/" />

@@ -3,6 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ebe69d422a72ddfc9e7a30279e89526/jetified-ijkplayer-java-0.8.8/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ebe69d422a72ddfc9e7a30279e89526/jetified-ijkplayer-java-0.8.8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/79a550955217dc72346b0f7641bc0845/transformed/jetified-ijkplayer-java-0.8.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/79a550955217dc72346b0f7641bc0845/transformed/jetified-ijkplayer-java-0.8.8/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/79a550955217dc72346b0f7641bc0845/transformed/jetified-ijkplayer-java-0.8.8/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
