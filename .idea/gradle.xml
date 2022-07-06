@@ -12,8 +12,27 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/apps" />
-            <option value="$PROJECT_DIR$/apps/anim" />
             <option value="$PROJECT_DIR$/apps/demo" />
+            <option value="$PROJECT_DIR$/apps/demo_anim" />
+            <option value="$PROJECT_DIR$/apps/demo_bar" />
+            <option value="$PROJECT_DIR$/apps/demo_base" />
+            <option value="$PROJECT_DIR$/apps/demo_cache" />
+            <option value="$PROJECT_DIR$/apps/demo_compose" />
+            <option value="$PROJECT_DIR$/apps/demo_dialog" />
+            <option value="$PROJECT_DIR$/apps/demo_fragment" />
+            <option value="$PROJECT_DIR$/apps/demo_json" />
+            <option value="$PROJECT_DIR$/apps/demo_kotlin" />
+            <option value="$PROJECT_DIR$/apps/demo_log" />
+            <option value="$PROJECT_DIR$/apps/demo_mediaplayer" />
+            <option value="$PROJECT_DIR$/apps/demo_multilanguages" />
+            <option value="$PROJECT_DIR$/apps/demo_mvvm" />
+            <option value="$PROJECT_DIR$/apps/demo_net" />
+            <option value="$PROJECT_DIR$/apps/demo_permission" />
+            <option value="$PROJECT_DIR$/apps/demo_popup" />
+            <option value="$PROJECT_DIR$/apps/demo_refresh" />
+            <option value="$PROJECT_DIR$/apps/demo_toast" />
+            <option value="$PROJECT_DIR$/apps/demo_utils" />
+            <option value="$PROJECT_DIR$/apps/demo_weight" />
             <option value="$PROJECT_DIR$/libs" />
             <option value="$PROJECT_DIR$/libs/xc_permission_lib" />
           </set>

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.panpf.sketch3:sketch:3.0.0-beta04@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b3b9bf48c73b8c56e01944dce5ef7e67/transformed/jetified-sketch-3.0.0-beta04/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b3b9bf48c73b8c56e01944dce5ef7e67/transformed/jetified-sketch-3.0.0-beta04/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b3b9bf48c73b8c56e01944dce5ef7e67/transformed/jetified-sketch-3.0.0-beta04/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.panpf.sketch3/sketch/3.0.0-beta04/e56a356f22168796ad77753140306a2aca979a9d/sketch-3.0.0-beta04-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.panpf.sketch3/sketch/3.0.0-beta04/5be147257e2ab7985c2acd7b2f23a73af17ec44f/sketch-3.0.0-beta04-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
