@@ -1,15 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: me.yokeyword:fragmentationx-core:1.0.2@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f8586c123d98525ebb84d882437bfb05/jetified-fragmentationx-core-1.0.2/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d83c5afb0617b1a5585f9fdf46f5f39d/transformed/jetified-fragmentationx-core-1.0.2/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2afbd3211369b2097251bac4a80dacc6/transformed/jetified-fragmentationx-core-1.0.2/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f8586c123d98525ebb84d882437bfb05/jetified-fragmentationx-core-1.0.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f8586c123d98525ebb84d882437bfb05/jetified-fragmentationx-core-1.0.2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d83c5afb0617b1a5585f9fdf46f5f39d/transformed/jetified-fragmentationx-core-1.0.2/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d83c5afb0617b1a5585f9fdf46f5f39d/transformed/jetified-fragmentationx-core-1.0.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d83c5afb0617b1a5585f9fdf46f5f39d/transformed/jetified-fragmentationx-core-1.0.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2afbd3211369b2097251bac4a80dacc6/transformed/jetified-fragmentationx-core-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2afbd3211369b2097251bac4a80dacc6/transformed/jetified-fragmentationx-core-1.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2afbd3211369b2097251bac4a80dacc6/transformed/jetified-fragmentationx-core-1.0.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.yokeyword/fragmentationx-core/1.0.2/b44e1469adb09472d7adfe6011b53b3c985b9946/fragmentationx-core-1.0.2-javadoc.jar!/" />

@@ -1,11 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.arialyy.aria:sftpComponent:3.8.9@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c52911dbbd32af4c70384fc356f5d770/jetified-sftpComponent-3.8.9/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c52911dbbd32af4c70384fc356f5d770/jetified-sftpComponent-3.8.9/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1dd2c48869467e9b0814d618a214a87f/transformed/jetified-sftpComponent-3.8.9/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1dd2c48869467e9b0814d618a214a87f/transformed/jetified-sftpComponent-3.8.9/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1dd2c48869467e9b0814d618a214a87f/transformed/jetified-sftpComponent-3.8.9/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0d294fd64553e5c40b91c95a4d70ba46/transformed/jetified-sftpComponent-3.8.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0d294fd64553e5c40b91c95a4d70ba46/transformed/jetified-sftpComponent-3.8.9/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0d294fd64553e5c40b91c95a4d70ba46/transformed/jetified-sftpComponent-3.8.9/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.arialyy.aria/sftpComponent/3.8.9/cf9bdf250a578dbdf6ec115df019b24ac63a9112/sftpComponent-3.8.9-javadoc.jar!/" />

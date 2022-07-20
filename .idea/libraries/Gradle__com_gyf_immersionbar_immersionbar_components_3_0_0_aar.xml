@@ -1,14 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.gyf.immersionbar:immersionbar-components:3.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/508a6e88988da865d7ad12b2b45c1cf0/jetified-immersionbar-components-3.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/508a6e88988da865d7ad12b2b45c1cf0/jetified-immersionbar-components-3.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c8c7a423100cedc8f0234ae780ec4f73/transformed/jetified-immersionbar-components-3.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c8c7a423100cedc8f0234ae780ec4f73/transformed/jetified-immersionbar-components-3.0.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c8c7a423100cedc8f0234ae780ec4f73/transformed/jetified-immersionbar-components-3.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/20a84d7b6cee780b03e48001e5760bc5/transformed/jetified-immersionbar-components-3.0.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/20a84d7b6cee780b03e48001e5760bc5/transformed/jetified-immersionbar-components-3.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/20a84d7b6cee780b03e48001e5760bc5/transformed/jetified-immersionbar-components-3.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8ecd5f063fe00611b9fb8c9bc8ebd14a/transformed/jetified-immersionbar-components-3.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8ecd5f063fe00611b9fb8c9bc8ebd14a/transformed/jetified-immersionbar-components-3.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8ecd5f063fe00611b9fb8c9bc8ebd14a/transformed/jetified-immersionbar-components-3.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gyf.immersionbar/immersionbar-components/3.0.0/7ac1db3961991dbad25eb35b53432927ef3329d2/immersionbar-components-3.0.0-javadoc.jar!/" />

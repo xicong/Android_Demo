@@ -9,8 +9,6 @@ object PerApp {
     
     fun permissionInit(application: Application,isScopedStorage:Boolean){
         app = application
-        //当前项目是否已经适配了分区存储的特性
-        XXPermissions.setScopedStorage(isScopedStorage);
     }
     
 }

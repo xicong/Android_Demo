@@ -1,11 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.arialyy.aria:httpComponent:3.8.9@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/458349bc760219664ec95fe728753f0b/jetified-httpComponent-3.8.9/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/458349bc760219664ec95fe728753f0b/jetified-httpComponent-3.8.9/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e11bc54b734bd06bde5c0831094a4ae0/transformed/jetified-httpComponent-3.8.9/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e11bc54b734bd06bde5c0831094a4ae0/transformed/jetified-httpComponent-3.8.9/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e11bc54b734bd06bde5c0831094a4ae0/transformed/jetified-httpComponent-3.8.9/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7293e3ebfe7268601b6e9204bc8271c6/transformed/jetified-httpComponent-3.8.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7293e3ebfe7268601b6e9204bc8271c6/transformed/jetified-httpComponent-3.8.9/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7293e3ebfe7268601b6e9204bc8271c6/transformed/jetified-httpComponent-3.8.9/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.arialyy.aria/httpComponent/3.8.9/e9617134e89c0c24989925a0f884104855500c15/httpComponent-3.8.9-javadoc.jar!/" />

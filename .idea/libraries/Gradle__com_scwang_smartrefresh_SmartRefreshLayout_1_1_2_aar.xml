@@ -1,14 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.scwang.smartrefresh:SmartRefreshLayout:1.1.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0d50e95915357ac2414f0e3c0c3050c2/jetified-SmartRefreshLayout-1.1.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0d50e95915357ac2414f0e3c0c3050c2/jetified-SmartRefreshLayout-1.1.2/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/12452f2b89ee7b269e1202171bc897c3/transformed/jetified-SmartRefreshLayout-1.1.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/12452f2b89ee7b269e1202171bc897c3/transformed/jetified-SmartRefreshLayout-1.1.2/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/12452f2b89ee7b269e1202171bc897c3/transformed/jetified-SmartRefreshLayout-1.1.2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fe68234be742e1aa7a4f8fb21f7ea612/transformed/jetified-SmartRefreshLayout-1.1.2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fe68234be742e1aa7a4f8fb21f7ea612/transformed/jetified-SmartRefreshLayout-1.1.2/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fe68234be742e1aa7a4f8fb21f7ea612/transformed/jetified-SmartRefreshLayout-1.1.2/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8359f135e94f3cf2acc7ef2bd5d68170/transformed/jetified-SmartRefreshLayout-1.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8359f135e94f3cf2acc7ef2bd5d68170/transformed/jetified-SmartRefreshLayout-1.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8359f135e94f3cf2acc7ef2bd5d68170/transformed/jetified-SmartRefreshLayout-1.1.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.scwang.smartrefresh/SmartRefreshLayout/1.1.2/5c5835a1929fa6d927015e3a5cb7b81c3da6d5b0/SmartRefreshLayout-1.1.2-javadoc.jar!/" />

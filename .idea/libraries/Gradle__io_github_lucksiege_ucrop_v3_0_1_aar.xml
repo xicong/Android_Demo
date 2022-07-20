@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.lucksiege:ucrop:v3.0.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/be92b9b205aa3f30fe4841cfe5bb855b/transformed/jetified-ucrop-v3.0.1/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/be92b9b205aa3f30fe4841cfe5bb855b/transformed/jetified-ucrop-v3.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/be92b9b205aa3f30fe4841cfe5bb855b/transformed/jetified-ucrop-v3.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/be92b9b205aa3f30fe4841cfe5bb855b/transformed/jetified-ucrop-v3.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.lucksiege/ucrop/v3.0.1/5e10af869350459cadf1329171e3e744cd382613/ucrop-v3.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.lucksiege/ucrop/v3.0.1/9c4fafb3b76ec8f3e1f496077b6e2ae455f8547/ucrop-v3.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

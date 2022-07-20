@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.lucksiege:pictureselector:v3.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b4166bec27209c98a0004012b56c8d69/transformed/jetified-pictureselector-v3.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b4166bec27209c98a0004012b56c8d69/transformed/jetified-pictureselector-v3.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b4166bec27209c98a0004012b56c8d69/transformed/jetified-pictureselector-v3.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.lucksiege/pictureselector/v3.0.1/cee96cb1d5f37ca0de00ee33395a4c484d80871/pictureselector-v3.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.lucksiege/pictureselector/v3.0.1/ca7197f85b89daab12b25fc6a78ae5421a24e180/pictureselector-v3.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

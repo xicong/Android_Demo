@@ -1,11 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.arialyy.aria:publicComponent:3.8.9@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bcaff6ff6b9b4e5372677bff4f1f664e/jetified-publicComponent-3.8.9/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bcaff6ff6b9b4e5372677bff4f1f664e/jetified-publicComponent-3.8.9/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/52b995c05a270ec3f2956bf0c8df52f0/transformed/jetified-publicComponent-3.8.9/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/52b995c05a270ec3f2956bf0c8df52f0/transformed/jetified-publicComponent-3.8.9/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/52b995c05a270ec3f2956bf0c8df52f0/transformed/jetified-publicComponent-3.8.9/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/de5e69585fc2b547af813cffba2aa9c2/transformed/jetified-publicComponent-3.8.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/de5e69585fc2b547af813cffba2aa9c2/transformed/jetified-publicComponent-3.8.9/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/de5e69585fc2b547af813cffba2aa9c2/transformed/jetified-publicComponent-3.8.9/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.arialyy.aria/publicComponent/3.8.9/88bac270647d21b4979949556ea15284692106f/publicComponent-3.8.9-javadoc.jar!/" />

@@ -1,11 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: tv.danmaku.ijk.media:ijkplayer-exo:0.8.8@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5c4dba754c77ec357c9e76c7a1ba4fee/jetified-ijkplayer-exo-0.8.8/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5c4dba754c77ec357c9e76c7a1ba4fee/jetified-ijkplayer-exo-0.8.8/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b4da104d5b8de02dc6ec702a240c418d/transformed/jetified-ijkplayer-exo-0.8.8/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b4da104d5b8de02dc6ec702a240c418d/transformed/jetified-ijkplayer-exo-0.8.8/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b4da104d5b8de02dc6ec702a240c418d/transformed/jetified-ijkplayer-exo-0.8.8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b7ce571838666b51758abe31997d75d0/transformed/jetified-ijkplayer-exo-0.8.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b7ce571838666b51758abe31997d75d0/transformed/jetified-ijkplayer-exo-0.8.8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b7ce571838666b51758abe31997d75d0/transformed/jetified-ijkplayer-exo-0.8.8/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

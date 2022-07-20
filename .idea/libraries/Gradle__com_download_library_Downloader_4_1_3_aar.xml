@@ -1,19 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.download.library:Downloader:4.1.3@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ce0686b2c97a3ed091abeeed03d9899/jetified-Downloader-4.1.3/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a7cecd58a2cdbe874bd153bd2d8f895f/transformed/jetified-Downloader-4.1.3/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/4ae9297f98fed87e7daa24a948d39969/transformed/jetified-Downloader-4.1.3/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/83dbbbe0e5de10a1c29902d50bb43064/transformed/jetified-Downloader-4.1.3/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ce0686b2c97a3ed091abeeed03d9899/jetified-Downloader-4.1.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ce0686b2c97a3ed091abeeed03d9899/jetified-Downloader-4.1.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a7cecd58a2cdbe874bd153bd2d8f895f/transformed/jetified-Downloader-4.1.3/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a7cecd58a2cdbe874bd153bd2d8f895f/transformed/jetified-Downloader-4.1.3/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a7cecd58a2cdbe874bd153bd2d8f895f/transformed/jetified-Downloader-4.1.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4ae9297f98fed87e7daa24a948d39969/transformed/jetified-Downloader-4.1.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4ae9297f98fed87e7daa24a948d39969/transformed/jetified-Downloader-4.1.3/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/4ae9297f98fed87e7daa24a948d39969/transformed/jetified-Downloader-4.1.3/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/83dbbbe0e5de10a1c29902d50bb43064/transformed/jetified-Downloader-4.1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/83dbbbe0e5de10a1c29902d50bb43064/transformed/jetified-Downloader-4.1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/83dbbbe0e5de10a1c29902d50bb43064/transformed/jetified-Downloader-4.1.3/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.download.library/Downloader/4.1.3/fcd0e8f3c53c490c1c22d586c9fb141509ef9034/Downloader-4.1.3-javadoc.jar!/" />

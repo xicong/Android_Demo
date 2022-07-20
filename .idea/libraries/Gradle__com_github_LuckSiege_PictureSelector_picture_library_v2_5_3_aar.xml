@@ -1,11 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.LuckSiege.PictureSelector:picture_library:v2.5.3@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2309cca123aab37bb9b1ae2b87111bda/jetified-picture_library-v2.5.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2309cca123aab37bb9b1ae2b87111bda/jetified-picture_library-v2.5.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5dd9d4409264b66f2138381550c80a58/transformed/jetified-picture_library-v2.5.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5dd9d4409264b66f2138381550c80a58/transformed/jetified-picture_library-v2.5.3/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5dd9d4409264b66f2138381550c80a58/transformed/jetified-picture_library-v2.5.3/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d034dbae07aee88654b0ee7aaabb911c/transformed/jetified-picture_library-v2.5.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d034dbae07aee88654b0ee7aaabb911c/transformed/jetified-picture_library-v2.5.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d034dbae07aee88654b0ee7aaabb911c/transformed/jetified-picture_library-v2.5.3/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

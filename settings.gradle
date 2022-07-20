@@ -1,8 +1,27 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.aliyun.com/repository/public'}
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.aliyun.com/repository/public'}
+    }
+}
+
 rootProject.name='Android_Demo'
 include ':apps:demo'
 include ':apps:demo_anim'
-include ':libs:xc_permission_lib'
-
 include ':apps:demo_compose'
 include ':apps:demo_weight'
 include ':apps:demo_popup'
@@ -22,3 +41,5 @@ include ':apps:demo_toast'
 include ':apps:demo_multilanguages'
 include ':apps:demo_cache'
 include ':apps:demo_net'
+
+include ':libs:xc_permission_lib'

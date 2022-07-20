@@ -1,68 +1,29 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-
 buildscript {
     ext {
-        compose_version = '1.2.0-rc03'
-    }
-    repositories {
-//        jcenter { url "https://maven.aliyun.com/repository/jcenter" }
-        mavenCentral()
-        google()
-        jcenter()
-        maven { url "https://jitpack.io" }
-        maven {
-            url 'https://maven.aliyun.com/repository/public'
-        }
-        maven {
-            credentials {
-                username '605ea0d168e8851ace7b9d8d'
-                password 'Z65hVhLWQyUk'
-            }
-            url 'https://packages.aliyun.com/maven/repository/2089426-release-V1AFss/'
-        }
-        maven {
-            credentials {
-                username '605ea0d168e8851ace7b9d8d'
-                password 'Z65hVhLWQyUk'
-            }
-            url 'https://packages.aliyun.com/maven/repository/2089426-snapshot-8mkHD6/'
-        }
+        kotlin_version = '1.5.31'
+        
+        androidx_core_ktx = "1.7.0"
+        androidx_compose_version = '1.1.0-beta01'
+        androidx_activity_compose = "1.3.1"
+        androidx_compose_material3 = "1.0.0-alpha01"
+        androidx_androidx_core = "1.7.0"
+
+        minSdkVersion = 21
+        targetSdkVersion = 32
+        compileSdkVersion = 32
+        buildToolsVersion = "29.0.3"
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.3'
-        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.20'
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.5"
-        classpath 'com.tencent.mm:AndResGuard-gradle-plugin:1.2.7'
+//        classpath 'com.tencent.mm:AndResGuard-gradle-plugin:1.2.7'
     }
 }
-
-allprojects {
-    repositories {
-//        jcenter { url "https://maven.aliyun.com/repository/jcenter" }
-        mavenCentral()
-        google()
-        jcenter()
-        maven { url "https://jitpack.io" }
-        maven {
-            url 'https://maven.aliyun.com/repository/public'
-        }
-        maven {
-            credentials {
-                username '605ea0d168e8851ace7b9d8d'
-                password 'Z65hVhLWQyUk'
-            }
-            url 'https://packages.aliyun.com/maven/repository/2089426-release-V1AFss/'
-        }
-        maven {
-            credentials {
-                username '605ea0d168e8851ace7b9d8d'
-                password 'Z65hVhLWQyUk'
-            }
-            url 'https://packages.aliyun.com/maven/repository/2089426-snapshot-8mkHD6/'
-        }
-    }
+plugins {
+    id 'com.android.application' version '7.2.1' apply false
+    id 'com.android.library' version '7.2.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.5.31' apply false
 }
-
 task clean(type: Delete) {
     delete rootProject.buildDir
 }

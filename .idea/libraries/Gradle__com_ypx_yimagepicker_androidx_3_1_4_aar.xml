@@ -1,11 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.ypx.yimagepicker:androidx:3.1.4@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5fd2ca30d46ff9cdcaa84eff06f34f72/jetified-androidx-3.1.4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5fd2ca30d46ff9cdcaa84eff06f34f72/jetified-androidx-3.1.4/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c58421823b0184863ab013c7eb79abec/transformed/jetified-androidx-3.1.4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c58421823b0184863ab013c7eb79abec/transformed/jetified-androidx-3.1.4/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c58421823b0184863ab013c7eb79abec/transformed/jetified-androidx-3.1.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/96ae166951371b3e9e104baa9ce990bf/transformed/jetified-androidx-3.1.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/96ae166951371b3e9e104baa9ce990bf/transformed/jetified-androidx-3.1.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/96ae166951371b3e9e104baa9ce990bf/transformed/jetified-androidx-3.1.4/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ypx.yimagepicker/androidx/3.1.4/6c2dfc41ca71d01a6feb10041885e81add4bfde0/androidx-3.1.4-javadoc.jar!/" />

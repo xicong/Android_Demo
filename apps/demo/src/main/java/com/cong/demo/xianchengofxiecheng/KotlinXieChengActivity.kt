@@ -53,7 +53,7 @@ import kotlinx.coroutines.*
  * 
  * 协程默认的四种调度方式  通过withcontext可以指定
  *  Dispatcher.Default     使用共享线程运行协程      cpu密集型任务   解析json文件  排序较大的list
- *  Dispatcher.Main  ui线程      更新ui
+ *  Dispatcher.MainActivity  ui线程      更新ui
  *  Dispatcher.Io  io线程     用于网络请求和文件访问  数据库操作
  *  Dispatcher.Unconfined   使用父协程运行的线程     高级调度器，不应该在常规的代码中使用
  *  newSingleThreadContext   在新线程中运行协程
