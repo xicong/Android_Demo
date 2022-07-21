@@ -61,6 +61,7 @@
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.2.0/57136ff68ee784c6e19db34ed4a175338fadfde1/annotation-1.2.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/64fd63021b77bf0070e72e7934d9a647/transformed/jetified-annotation-experimental-1.1.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/2180518fc65b3fca568ede35f1bfacb3/transformed/jetified-XXPermissions-15.0-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../../../../Sdks/Android_sdk/platforms/android-32/android.jar</arg>
                 <arg>$MODULE_DIR$/../../../../../../Sdks/Android_sdk/build-tools/30.0.3/core-lambda-stubs.jar</arg>
               </args>
@@ -158,6 +159,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.activity:activity-ktx:1.3.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.savedstate:savedstate-ktx:1.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.github.getActivity:XXPermissions:15.0@aar" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="Android_Demo.apps.demo_permission.main" />
 </module>

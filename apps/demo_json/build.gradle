@@ -64,5 +64,8 @@ dependencies {
     //fastjson2：https://github.com/alibaba/fastjson2
     
     //GsonFactory  Gson 解析容错框架
-    //https://github.com/getActivity/GsonFactory
+    // Gson 解析容错：https://github.com/getActivity/GsonFactory
+    implementation 'com.github.getActivity:GsonFactory:6.2'
+    // Json 解析框架：https://github.com/google/gson
+    implementation 'com.google.code.gson:gson:2.9.0'
 }

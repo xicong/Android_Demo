@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.getActivity:GsonFactory:6.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2a11910e8b44d325d5acbdc4685159a6/transformed/jetified-GsonFactory-6.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2a11910e8b44d325d5acbdc4685159a6/transformed/jetified-GsonFactory-6.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2a11910e8b44d325d5acbdc4685159a6/transformed/jetified-GsonFactory-6.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.getActivity/GsonFactory/6.2/4cc7c3ec560fce1c002f6e785eaa144fb8fb4ff4/GsonFactory-6.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

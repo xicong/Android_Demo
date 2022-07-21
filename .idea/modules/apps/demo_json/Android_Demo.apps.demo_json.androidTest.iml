@@ -75,6 +75,8 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/fa4a99ab6ab6d8957bd59521ab018665/transformed/jetified-annotations-13.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/6cecbcece10c70340d46de45394a4b67/transformed/jetified-kotlin-stdlib-common-1.5.31.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/64fd63021b77bf0070e72e7934d9a647/transformed/jetified-annotation-experimental-1.1.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/7614470dd38ec4a11364e767d93f4f93/transformed/jetified-GsonFactory-6.2-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/64ff321884c0f21bd30549dabf055ace/transformed/jetified-gson-2.9.0.jar</arg>
                 <arg>$MODULE_DIR$/../../../../../../Sdks/Android_sdk/platforms/android-32/android.jar</arg>
                 <arg>$MODULE_DIR$/../../../../../../Sdks/Android_sdk/build-tools/30.0.3/core-lambda-stubs.jar</arg>
               </args>
@@ -150,6 +152,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:1.5.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.arch.core:core-common:2.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.collection:collection:1.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.gson:gson:2.9.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.ext:junit:1.1.3@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:core:1.4.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:monitor:1.4.0@aar" level="project" />
@@ -192,6 +195,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.activity:activity-ktx:1.3.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.savedstate:savedstate-ktx:1.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.github.getActivity:GsonFactory:6.2@aar" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="Android_Demo.apps.demo_json.main" />
 </module>

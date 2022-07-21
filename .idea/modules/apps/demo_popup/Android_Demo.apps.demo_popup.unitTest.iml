@@ -62,6 +62,7 @@
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.2.0/57136ff68ee784c6e19db34ed4a175338fadfde1/annotation-1.2.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/64fd63021b77bf0070e72e7934d9a647/transformed/jetified-annotation-experimental-1.1.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/3c0e3441d619db5d09abfbd54870c3e0/transformed/jetified-BasePopup-2.2.2.2-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/934813a88f95369e3a59d1ce0c93d5b1/transformed/jetified-XPopup-2.8.13-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../../../../Sdks/Android_sdk/platforms/android-32/android.jar</arg>
                 <arg>$MODULE_DIR$/../../../../../../Sdks/Android_sdk/build-tools/30.0.3/core-lambda-stubs.jar</arg>
               </args>
@@ -160,6 +161,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.savedstate:savedstate-ktx:1.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.github.razerdp:BasePopup:2.2.2.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.github.li-xiaojun:XPopup:2.8.13@aar" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="Android_Demo.apps.demo_popup.main" />
 </module>

@@ -131,6 +131,7 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/eb4dd9e83c4f72b0a054b99852dd2d2e/transformed/jetified-fresco-2.6.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/188c1136c106dffad7e19b2da620b32f/transformed/jetified-Luban-1.1.8-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/74dba8d37df7168986a36db882b2331f/transformed/jetified-lottie-5.2.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/59af69d08f5450f1f9fe51d5ddb61017/transformed/jetified-ShapeView-8.2-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/ef52aebff0fbc5cbd3f0430a346ea947/transformed/exifinterface-1.3.3-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/1fc6e81d5ea667182816a0541a356e18/transformed/constraintlayout-2.1.2-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/77f2c01a9db330a137d921b125fe85b1/transformed/jetified-gson-2.8.6.jar</arg>
@@ -336,6 +337,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.picasso:picasso:2.8@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: top.zibin:Luban:1.1.8@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.airbnb.android:lottie:5.2.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.github.getActivity:ShapeView:8.2@aar" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="Android_Demo.apps.demo_weight.main" />
 </module>

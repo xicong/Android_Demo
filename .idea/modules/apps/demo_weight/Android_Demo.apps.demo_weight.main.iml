@@ -124,6 +124,7 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/b6946068fb6900c10c625631c7e6e97d/transformed/jetified-nativeimagetranscoder-2.6.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/188c1136c106dffad7e19b2da620b32f/transformed/jetified-Luban-1.1.8-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/74dba8d37df7168986a36db882b2331f/transformed/jetified-lottie-5.2.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/59af69d08f5450f1f9fe51d5ddb61017/transformed/jetified-ShapeView-8.2-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../../../../Sdks/Android_sdk/platforms/android-32/android.jar</arg>
                 <arg>$MODULE_DIR$/../../../../../../Sdks/Android_sdk/build-tools/30.0.3/core-lambda-stubs.jar</arg>
               </args>
@@ -309,5 +310,6 @@
     <orderEntry type="library" name="Gradle: com.squareup.picasso:picasso:2.8@aar" level="project" />
     <orderEntry type="library" name="Gradle: top.zibin:Luban:1.1.8@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.airbnb.android:lottie:5.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.getActivity:ShapeView:8.2@aar" level="project" />
   </component>
 </module>

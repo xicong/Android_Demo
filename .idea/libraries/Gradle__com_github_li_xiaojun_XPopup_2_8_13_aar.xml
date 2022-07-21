@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.li-xiaojun:XPopup:2.8.13@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f3b0587b1fe2b994c01fd5d6726c842f/transformed/jetified-XPopup-2.8.13/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f3b0587b1fe2b994c01fd5d6726c842f/transformed/jetified-XPopup-2.8.13/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f3b0587b1fe2b994c01fd5d6726c842f/transformed/jetified-XPopup-2.8.13/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f3b0587b1fe2b994c01fd5d6726c842f/transformed/jetified-XPopup-2.8.13/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.li-xiaojun/XPopup/2.8.13/a063e423896f337a27a4845bc85e14064735a313/XPopup-2.8.13-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -62,4 +62,5 @@ dependencies {
     
     //XXPermissions
     //https://github.com/getActivity/XXPermissions
+    implementation 'com.github.getActivity:XXPermissions:15.0'
 }

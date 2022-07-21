@@ -62,6 +62,11 @@ dependencies {
     
     //ToastUtils
     //https://github.com/getActivity/ToastUtils
+    implementation 'com.blankj:utilcodex:1.31.0'
     
+    //https://github.com/getActivity/ToastUtils
+    implementation 'com.github.getActivity:ToastUtils:10.5'
     
+    //https://github.com/getActivity/XToast
+    implementation 'com.github.getActivity:XToast:8.5'
 }

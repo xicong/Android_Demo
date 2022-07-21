@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.getActivity:ShapeView:8.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d06e1f0cd703725ee19c9cb243e11569/transformed/jetified-ShapeView-8.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d06e1f0cd703725ee19c9cb243e11569/transformed/jetified-ShapeView-8.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d06e1f0cd703725ee19c9cb243e11569/transformed/jetified-ShapeView-8.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.getActivity/ShapeView/8.2/165dd3ec9094c3a69a982a6a7fb8e15b690d5186/ShapeView-8.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
