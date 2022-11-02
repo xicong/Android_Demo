@@ -1,0 +1,43 @@
+apply from: '../../base.gradle'
+apply plugin: 'org.jetbrains.kotlin.android'
+def isApp = true
+androidApplyPlugins(isApp)
+
+android {
+    androidClosure(it, isApp,1,"1.0.0","com.cxi.demo_activity")
+    buildFeatures {
+        viewBinding true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
+    implementation 'androidx.activity:activity-compose:1.3.1'
+    implementation "androidx.compose.ui:ui:$androidx_compose_version"
+    implementation "androidx.compose.ui:ui-tooling-preview:$androidx_compose_version"
+    implementation 'androidx.compose.material3:material3:1.0.0-alpha02'
+    implementation 'com.google.android.material:material:1.4.+'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$androidx_compose_version"
+    debugImplementation "androidx.compose.ui:ui-tooling:$androidx_compose_version"
+    debugImplementation "androidx.compose.ui:ui-test-manifest:$androidx_compose_version"
+    
+    implementation project(path: ':libs:lib_base')
+
+}

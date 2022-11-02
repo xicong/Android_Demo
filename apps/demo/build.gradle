@@ -102,9 +102,9 @@ dependencies {
     implementation "androidx.core:core-ktx:$androidx_core_ktx"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.android.material:material:1.5.0'
-    
-    implementation project(path: ':libs:xc_permission_lib')
-    
+    implementation project(path: ':libs:lib_permission')
+
+
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 

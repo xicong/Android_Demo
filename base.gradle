@@ -1,0 +1,145 @@
+import sun.rmi.runtime.Log
+
+//获取当前时间
+static def getCurrentTime() {
+//    return new Date().format("yyyyMMddHHmmss",TimeZone.getTimeZone("UTC"))
+    return new Date().format("yyyyMMddHHmmss")
+}
+
+
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+
+ext {
+
+    androidApplyPlugins = { isApp ->
+        if (isApp) {
+            apply plugin: 'com.android.application'
+        } else {
+            apply plugin: 'com.android.library'
+        }
+        apply plugin: 'org.jetbrains.kotlin.android'
+        apply plugin: 'kotlin-android'
+        apply plugin: 'kotlin-kapt'
+    }
+
+    androidClosure = { android, isApp, verCode, verName, appId ->
+        android.with {
+            compileSdkVersion buildVersions.app_compile_sdk_version
+            buildToolsVersion buildVersions.app_build_tools_version
+            namespace appId
+
+            defaultConfig {
+                minSdkVersion buildVersions.app_min_sdk_version
+                targetSdkVersion buildVersions.app_target_sdk_version
+                testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+                versionCode verCode
+                versionName verName
+                if (isApp) {
+                    applicationId appId
+                }
+                vectorDrawables {
+                    useSupportLibrary true
+                }
+                vectorDrawables.useSupportLibrary = true
+                //指定room.schemaLocation生成的文件路径
+                javaCompileOptions {
+                    annotationProcessorOptions {
+                        arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+                    }
+                }
+                manifestPlaceholders = [
+                        PACKAGE_NAME: "$appId",
+                ]
+                /*自定义包名 aab  apk*/
+                if (isApp){
+                    setArchivesBaseName("${project.name}-${getCurrentTime().trim()}-V${versionName}(${versionCode})")
+                }
+            }
+            dexOptions {
+                javaMaxHeapSize "2048M"
+            }
+            kapt {
+                generateStubs = true  //启用kapt
+            }
+            kotlinOptions {
+                jvmTarget = "1.8"
+            }
+            buildFeatures {
+                compose true
+            }
+            packagingOptions {
+                resources {
+                    excludes += '/META-INF/{AL2.0,LGPL2.1}'
+                }
+            }
+            signingConfigs {
+                config{
+                    keyAlias keystoreProperties['keyAlias']
+                    keyPassword keystoreProperties['keyPassword']
+                    storeFile file(new File(keystoreProperties['storeFile']))
+                    storePassword keystoreProperties['storePassword']
+                }
+            }
+            buildTypes {
+                release {
+                    zipAlignEnabled false  //对齐zip
+                    minifyEnabled false   //开启混淆
+                    shrinkResources false   //资源缩减
+                    multiDexEnabled true
+                    signingConfig signingConfigs.config
+                    proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+                }
+                debug {
+                    zipAlignEnabled false
+                    minifyEnabled false
+                    shrinkResources false
+                    multiDexEnabled true
+                    signingConfig signingConfigs.config
+                    proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+                }
+            }
+            compileOptions {
+                sourceCompatibility JavaVersion.VERSION_1_8
+                targetCompatibility JavaVersion.VERSION_1_8
+            }
+            buildFeatures {
+                dataBinding = true
+                viewBinding = true
+                compose true
+            }
+            composeOptions {
+                kotlinCompilerExtensionVersion kotlin_compiler_extension_version
+            }
+            packagingOptions {
+                resources {
+                    excludes += '/META-INF/{AL2.0,LGPL2.1}'
+                }
+            }
+            if(isApp){
+                //自定义包名  apk
+                android.applicationVariants.all { 
+                    variant ->
+                        variant.outputs.all {
+                            output ->
+                                def outputFile = output.outputFile
+                                if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                                    if (variant.buildType.name == 'release') {
+                                        outputFileName = "${project.name}-${getCurrentTime().trim()}-V${verName}(${verCode})-release.apk"
+                                    }else if (variant.buildType.name == 'debug') {
+                                        outputFileName = "${project.name}-${getCurrentTime().trim()}-V${verName}(${verCode})-debug.apk"
+                                    }
+                                }
+                        }
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+

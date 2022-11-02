@@ -2,19 +2,10 @@ package com.cong.demo
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.blankj.utilcode.util.ActivityUtils
-import com.cong.demo.activity.Activity_Xg
 import com.cong.demo.base.BaseActivity
-import com.cong.demo.bluetooth.getdata.BluetoothGetDataActivity
 import com.cong.demo.fragment.Fragment_Xg
-import com.cong.demo.jetpack.livedata.LIveDataActivity
-import com.cong.demo.jetpack.navigation.NavigationDemo
-import com.cong.demo.jetpack.room.RoomActivity
 import com.cong.demo.shijianfenfa.ShijianfenfaActivity
 import com.cong.demo.utils.UtilsActivity
-import com.cong.demo.xianchengofxiecheng.KotlinXieChengActivity
-import com.cong.demo.zidingyiview.ZdyXinLvTuActivity
-import com.cong.demo.zidingyiview.Zdy_View_Zhexiantu_Activity
-import com.cong.demo.zidingyiview.Zdy_view_textview_Activity
 import kotlinx.android.synthetic.main.layout_main.*
 
 class MainActivity : BaseActivity(){
