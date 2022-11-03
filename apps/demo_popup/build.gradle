@@ -65,5 +65,5 @@ dependencies {
     
     //XPopup
     //https://github.com/li-xiaojun/XPopup
-    implementation 'com.github.li-xiaojun:XPopup:2.8.13'
+    implementation lib_other.other_xpopup
 }

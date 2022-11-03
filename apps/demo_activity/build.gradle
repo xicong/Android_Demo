@@ -4,17 +4,7 @@ def isApp = true
 androidApplyPlugins(isApp)
 
 android {
-    androidClosure(it, isApp,1,"1.0.0","com.cxi.demo_activity")
-    buildFeatures {
-        viewBinding true
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = '1.8'
-    }
+    androidClosure(it, isApp,1,"1.0.0","com.cxi.demo_activity","activity_")
 }
 
 dependencies {

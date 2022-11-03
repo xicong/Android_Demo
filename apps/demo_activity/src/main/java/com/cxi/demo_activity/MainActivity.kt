@@ -1,22 +1,31 @@
 package com.cxi.demo_activity
 
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
-import android.provider.CalendarContract.Colors
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.*
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.sp
+import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.cxi.demo_activity.ui.theme.Android_DemoTheme
+import com.cxi.lib_base.ext.getActivity
+import com.cxi.lib_base.ext.registerBroadcast
+import com.cxi.lib_base.utils.BroadcastUtils
 import com.cxi.lib_base.utils.LogUtils
 
 class MainActivity : ComponentActivity() {
@@ -27,6 +36,11 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         LogUtils.getInstance().i("=============onCreate=================")
+        registerBroadcast(object:BroadcastReceiver(){
+            override fun onReceive(p0: Context?, p1: Intent?) {
+                LogUtils.getInstance().i("解锁了")
+            }
+        },Intent.ACTION_USER_PRESENT)
         setContent {
             Android_DemoTheme {
                 // A surface container using the 'background' color from the theme
@@ -88,19 +102,51 @@ class MainActivity : ComponentActivity() {
         super.onRestart()
         LogUtils.getInstance().i("=============onRestart=================")
     }
+
+    /**
+    1、当用户按下HOME键时，屏幕被关闭时。
+    2、从当前activity启动一个新的activity时。
+    3、屏幕方向切换时。
+     */
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        LogUtils.getInstance().i("=============onSaveInstanceState=================")
+    }
+
+    /**
+    onRestoreInstanceState(Bundle savedInstanceState)只有在activity确实是被系统回收，重新创建activity的情况下才会被调用，此时参数savedInstanceState一定不为null，
+    在onStart方法之后执行，如果在onRestoreInstanceState中读取savedInstanceState一定有值，如果在onCreate中读取Bundle存储的信息是有可能为null的。
+     */
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        LogUtils.getInstance().i("=============onRestoreInstanceState=================")
+    }
     
 }
 
 @Composable
 fun Greeting(name: String) {
+    val mainActivity = LocalContext.current.getActivity<MainActivity>()
     Box(
-        modifier = Modifier.background(Color.Green)
+        modifier = Modifier
+            .background(Color.Green)
+            .fillMaxHeight()
+            .fillMaxWidth()
+            .clickable {
+                mainActivity?.let { MainActivity2.go(it) }
+            },
+        contentAlignment = Alignment.Center, // 居中对齐
+//        propagateMinConstraints = true,
     ){
         Text(
             text = "$name!",
-            modifier = Modifier.clickable { 
-                
-            }
+            fontSize = 50.sp,
+            color = Color.Blue,
+            textAlign = TextAlign.Center,
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier
+//                .background(color = Color.White)
+                .align(Alignment.Center),
         )
     }
 }

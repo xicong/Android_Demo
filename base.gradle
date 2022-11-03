@@ -25,12 +25,16 @@ ext {
         apply plugin: 'kotlin-kapt'
     }
 
-    androidClosure = { android, isApp, verCode, verName, appId ->
+    androidClosure = { android, isApp, verCode, verName, appId, resourcePrefixStr->
         android.with {
+            
             compileSdkVersion buildVersions.app_compile_sdk_version
             buildToolsVersion buildVersions.app_build_tools_version
             namespace appId
 
+            //统一资源前缀，规范资源引用
+            resourcePrefix resourcePrefixStr
+            
             defaultConfig {
                 minSdkVersion buildVersions.app_min_sdk_version
                 targetSdkVersion buildVersions.app_target_sdk_version
@@ -53,6 +57,19 @@ ext {
                 manifestPlaceholders = [
                         PACKAGE_NAME: "$appId",
                 ]
+                sourceSets{
+                    main{
+                        if (isApp){
+                            manifest.srcFile 'src/main/alone/AndroidManifest.xml'
+                        }else{
+                            manifest.srcFile 'src/main/AndroidManifest.xml'
+                            resources {
+                                //正式版本时，排除alone文件夹下所有调试文件
+                                exclude 'src/main/alone/*'
+                            }
+                        }
+                    }
+                }
                 /*自定义包名 aab  apk*/
                 if (isApp){
                     setArchivesBaseName("${project.name}-${getCurrentTime().trim()}-V${versionName}(${versionCode})")

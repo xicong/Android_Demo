@@ -3,7 +3,7 @@ def isApp = false
 androidApplyPlugins(isApp)
 
 android {
-    androidClosure(it, isApp,1,"1.0.0","com.cxi.lib_base")
+    androidClosure(it, isApp,1,"1.0.0","com.cxi.lib_base","base_")
 }
 
 dependencies {
