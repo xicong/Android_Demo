@@ -1,6 +1,11 @@
 package com.cxi.lib_base.utils
 
+import android.text.SpannableStringBuilder
+import android.util.Log
+
 class LogUtils private constructor() {
+    
+    private val TAG = "XIXIANSEN"
 
     companion object {
         fun getInstance() = Helper.instance
@@ -11,6 +16,11 @@ class LogUtils private constructor() {
     }
     
     fun i(vararg content:Any){
-        com.blankj.utilcode.util.LogUtils.i(content)
+        val msgSpan = SpannableStringBuilder()
+        for (i in content.indices){
+            msgSpan.append("          ")
+            msgSpan.append(content[i].toString())
+        }
+        Log.i(TAG,msgSpan.toString())
     }
 }

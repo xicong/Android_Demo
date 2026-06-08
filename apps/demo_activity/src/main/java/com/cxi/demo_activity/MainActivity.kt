@@ -35,7 +35,7 @@ class MainActivity : ComponentActivity() {
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        LogUtils.getInstance().i("=============onCreate=================")
+        LogUtils.getInstance().i("MainActivity=============onCreate=================")
         registerBroadcast(object:BroadcastReceiver(){
             override fun onReceive(p0: Context?, p1: Intent?) {
                 LogUtils.getInstance().i("解锁了")
@@ -59,7 +59,7 @@ class MainActivity : ComponentActivity() {
      */
     override fun onStart() {
         super.onStart()
-        LogUtils.getInstance().i("=============onStart=================")
+        LogUtils.getInstance().i("MainActivity=============onStart=================")
     }
 
     /**
@@ -67,7 +67,7 @@ class MainActivity : ComponentActivity() {
      */
     override fun onResume() {
         super.onResume()
-        LogUtils.getInstance().i("=============onResume=================")
+        LogUtils.getInstance().i("MainActivity=============onResume=================")
     }
 
     /**
@@ -75,7 +75,7 @@ class MainActivity : ComponentActivity() {
      */
     override fun onPause() {
         super.onPause()
-        LogUtils.getInstance().i("=============onPause=================")
+        LogUtils.getInstance().i("MainActivity=============onPause=================")
     }
 
 
@@ -84,7 +84,7 @@ class MainActivity : ComponentActivity() {
      */
     override fun onStop() {
         super.onStop()
-        LogUtils.getInstance().i("=============onStop=================")
+        LogUtils.getInstance().i("MainActivity=============onStop=================")
     }
 
     /**
@@ -92,7 +92,7 @@ class MainActivity : ComponentActivity() {
      */
     override fun onDestroy() {
         super.onDestroy()
-        LogUtils.getInstance().i("=============onDestroy=================")
+        LogUtils.getInstance().i("MainActivity=============onDestroy=================")
     }
 
     /**
@@ -100,7 +100,7 @@ class MainActivity : ComponentActivity() {
      */
     override fun onRestart() {
         super.onRestart()
-        LogUtils.getInstance().i("=============onRestart=================")
+        LogUtils.getInstance().i("MainActivity=============onRestart=================")
     }
 
     /**
@@ -110,7 +110,7 @@ class MainActivity : ComponentActivity() {
      */
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        LogUtils.getInstance().i("=============onSaveInstanceState=================")
+        LogUtils.getInstance().i("MainActivity=============onSaveInstanceState=================")
     }
 
     /**
@@ -119,7 +119,7 @@ class MainActivity : ComponentActivity() {
      */
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
-        LogUtils.getInstance().i("=============onRestoreInstanceState=================")
+        LogUtils.getInstance().i("MainActivity=============onRestoreInstanceState=================")
     }
     
 }
